@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Nav from "../components/Nav";
 
 const communityStories = [
   { phase: "Deep in the grind", text: "You make me feel like I am there. Like someone finally understands what this actually looks like." },
@@ -51,13 +52,6 @@ export default function Home() {
         .book-strip { display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
         .phase-btn { padding: 1.1rem 1.25rem; border: 0.5px solid #D3D1C7; border-radius: 8px; cursor: pointer; background: #FDFAF6; text-align: left; font-family: 'Lora', serif; font-size: 14px; font-style: italic; line-height: 1.5; color: #2C2C2A; transition: border-color 0.15s, background 0.15s; }
         .phase-btn:hover { border-color: #BA7517; background: #FAEEDA; }
-        .nav-wrapper { max-width: 1100px; margin: 0 auto; }
-        .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 2rem; border-bottom: 0.5px solid #D3D1C7; }
-        .nav-links { display: flex; gap: 1.5rem; list-style: none; align-items: center; }
-        .nav-link { font-size: 13px; color: #5F5E5A; text-decoration: none; white-space: nowrap; }
-        .nav-link:hover { color: #2C2C2A; }
-        .join-btn { font-size: 13px; padding: 7px 18px; border: 0.5px solid #BA7517; border-radius: 20px; color: #BA7517; background: transparent; cursor: pointer; white-space: nowrap; font-family: 'Inter', sans-serif; }
-        .join-btn:hover { background: #BA7517; color: #FDFAF6; }
         @media (max-width: 768px) {
           .intake-grid { grid-template-columns: 1fr !important; }
           .proof-grid { grid-template-columns: 1fr !important; }
@@ -66,34 +60,10 @@ export default function Home() {
         }
       `}</style>
 
-      {/* NAV — uses shared component behavior inline for homepage */}
-      <nav style={{ borderBottom: "0.5px solid #D3D1C7" }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.25rem 2rem", maxWidth: "1100px", margin: "0 auto" }}>
-          <div style={{ fontFamily: "'Lora', serif", fontSize: "18px", fontWeight: 400, letterSpacing: "-0.3px", whiteSpace: "nowrap" }}>
-            The Caregiver&apos;s <span style={{ color: "#BA7517" }}>Trap</span>
-          </div>
-          <ul className="nav-links" style={{ display: "flex", gap: "1.5rem", listStyle: "none", alignItems: "center" }}>
-            {[
-              { label: "The trap", href: "/the-trap" },
-              { label: "Daily grind", href: "/daily-grind" },
-              { label: "Fight back", href: "/fight-back" },
-              { label: "Tools", href: "/tools" },
-              { label: "Community", href: "/community" },
-              { label: "After", href: "/after" },
-              { label: "About", href: "/about" },
-            ].map((item) => (
-              <li key={item.label}>
-                <a href={item.href} className="nav-link">{item.label}</a>
-              </li>
-            ))}
-          </ul>
-          <button className="join-btn">Join free</button>
-        </div>
-      </nav>
+      <Nav />
 
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
 
-        {/* HERO */}
         <section style={{ padding: "5rem 2rem 3rem", maxWidth: "680px" }}>
           <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase", color: "#BA7517", marginBottom: "1.5rem", fontWeight: 500 }}>
             A resource for caregivers
@@ -107,10 +77,8 @@ export default function Home() {
           </p>
         </section>
 
-        {/* AMBER DIVIDER */}
         <div style={{ width: "40px", height: "1.5px", background: "#BA7517", margin: "0 0 3rem 2rem" }} />
 
-        {/* INTAKE */}
         <section style={{ padding: "0 2rem 4rem" }}>
           <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase", color: "#888780", marginBottom: "1.5rem", fontWeight: 500 }}>
             Where are you right now?
@@ -122,7 +90,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* PROOF QUOTES */}
         <section style={{ padding: "3rem 2rem", borderTop: "0.5px solid #D3D1C7" }}>
           <div className="proof-grid">
             {[
@@ -138,7 +105,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* COMMUNITY PULSE */}
         <section style={{ padding: "3rem 2rem", background: "#F5F0E8", borderTop: "0.5px solid #D3D1C7" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.5rem", flexWrap: "wrap", gap: "0.5rem" }}>
             <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase", color: "#888780", fontWeight: 500 }}>
@@ -158,7 +124,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* BOOK STRIP */}
         <section style={{ padding: "2rem", borderTop: "0.5px solid #D3D1C7" }}>
           <div className="book-strip">
             <div>
@@ -181,7 +146,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* FOOTER QUOTE */}
         <section style={{ padding: "2.5rem 2rem 4rem", borderTop: "0.5px solid #D3D1C7", maxWidth: "580px" }}>
           <blockquote style={{ fontFamily: "'Lora', serif", fontSize: "15px", fontStyle: "italic", lineHeight: 1.8, color: "#5F5E5A", paddingLeft: "1.25rem", borderLeft: "2px solid #BA7517", marginBottom: "0.75rem" }}>
             &ldquo;I am tired of clinging. Though I cannot see it with my eyes, I trust that the current knows where it is going. I shall let go, and let it take me where it will.&rdquo;
