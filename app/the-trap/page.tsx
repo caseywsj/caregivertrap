@@ -1,3 +1,4 @@
+"use client";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import JoinCTA from "../../components/JoinCTA";
@@ -43,7 +44,9 @@ export default function TheTrap() {
               { title: "Husband First, Caregiver Second", desc: "The most important identity decision you'll make. And why the order matters more than anything.", href: "/the-trap/husband-first" },
             ].map((item, i) => (
               <a key={i} href={item.href} style={{ textDecoration: "none" }}>
-                <div style={{ padding: "1.5rem", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#fff", cursor: "pointer", transition: "border-color 0.15s" }}
+                <div
+                  key={i}
+                  style={{ padding: "1.5rem", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#fff", cursor: "pointer" }}
                   onMouseEnter={(e) => (e.currentTarget as HTMLDivElement).style.borderColor = "#BA7517"}
                   onMouseLeave={(e) => (e.currentTarget as HTMLDivElement).style.borderColor = "#D3D1C7"}
                 >
