@@ -16,12 +16,12 @@ const communityStories = [
 ];
 
 const phases = [
-  "I just got the call. Everything changed overnight.",
-  "I'm deep in it. Every day is a grind and I'm running on empty.",
-  "We're in a crisis right now — hospital, decisions, fear.",
-  "We've found our footing. Life is almost normal but different.",
-  "I can see the end coming. I need to be ready.",
-  "It's over. I'm trying to figure out what comes next.",
+  { text: "I just got the call. Everything changed overnight.", href: "/the-trap" },
+  { text: "I'm deep in it. Every day is a grind and I'm running on empty.", href: "/daily-grind" },
+  { text: "We're in a crisis right now — hospital, decisions, fear.", href: "/fight-back" },
+  { text: "We've found our footing. Life is almost normal but different.", href: "/emotional-landscape" },
+  { text: "I can see the end coming. I need to be ready.", href: "/hard-conversations" },
+  { text: "It's over. I'm trying to figure out what comes next.", href: "/after" },
 ];
 
 export default function Home() {
@@ -50,7 +50,7 @@ export default function Home() {
         .proof-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
         .story-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
         .book-strip { display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
-        .phase-btn { padding: 1.1rem 1.25rem; border: 0.5px solid #D3D1C7; border-radius: 8px; cursor: pointer; background: #FDFAF6; text-align: left; font-family: 'Lora', serif; font-size: 14px; font-style: italic; line-height: 1.5; color: #2C2C2A; transition: border-color 0.15s, background 0.15s; }
+        .phase-btn { padding: 1.1rem 1.25rem; border: 0.5px solid #D3D1C7; border-radius: 8px; cursor: pointer; background: #FDFAF6; text-align: left; font-family: 'Lora', serif; font-size: 14px; font-style: italic; line-height: 1.5; color: #2C2C2A; transition: border-color 0.15s, background 0.15s; text-decoration: none; display: block; }
         .phase-btn:hover { border-color: #BA7517; background: #FAEEDA; }
         @media (max-width: 768px) {
           .intake-grid { grid-template-columns: 1fr !important; }
@@ -85,7 +85,9 @@ export default function Home() {
           </p>
           <div className="intake-grid">
             {phases.map((phase, i) => (
-              <button key={i} className="phase-btn">{phase}</button>
+              <a key={i} href={phase.href} className="phase-btn">
+                {phase.text}
+              </a>
             ))}
           </div>
         </section>
