@@ -7,6 +7,7 @@ export default function TheTrap() {
     <main style={{ fontFamily: "'Inter', sans-serif", background: "#FDFAF6", color: "#2C2C2A", minHeight: "100vh" }}>
       <Nav />
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+
         <section style={{ padding: "5rem 2rem 3rem", maxWidth: "680px" }}>
           <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#BA7517", marginBottom: "1rem", fontWeight: 500 }}>
             Section one
@@ -32,19 +33,25 @@ export default function TheTrap() {
 
         <section style={{ padding: "0 2rem 4rem" }}>
           <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#888780", marginBottom: "2rem", fontWeight: 500 }}>
-            Coming soon
+            Articles
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1rem", maxWidth: "860px" }}>
             {[
-              { title: "What the trap actually looks like", desc: "How competence and love quietly become a cage. The slow disappearance nobody notices — including you." },
-              { title: "The isolation hiding inside the compliments", desc: "Why \"you're so amazing\" is the loneliest thing someone can say to a caregiver." },
-              { title: "Groundhog Day", desc: "The relentless rhythm of the daily grind. How to survive it without losing yourself." },
-              { title: "Husband first, caregiver second", desc: "The most important identity decision you'll make. And why the order matters more than anything." },
+              { title: "The Disappearing Act", desc: "How competence and love quietly become a cage. The slow disappearance nobody notices — including you.", href: "/the-trap/identity-erosion" },
+              { title: "\"You're So Amazing\" — The Loneliest Compliment", desc: "I had an extraordinary village. Not everyone does. Here's what the difference looks like and how to build one.", href: "/the-trap/youre-so-amazing" },
+              { title: "Groundhog Day", desc: "The relentless rhythm of caregiving — and how to survive it without losing your mind.", href: "/the-trap/groundhog-day" },
+              { title: "Husband First, Caregiver Second", desc: "The most important identity decision you'll make. And why the order matters more than anything.", href: "/the-trap/husband-first" },
             ].map((item, i) => (
-              <div key={i} style={{ padding: "1.5rem", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#fff" }}>
-                <p style={{ fontFamily: "'Lora', serif", fontSize: "16px", fontWeight: 500, color: "#2C2C2A", marginBottom: "0.5rem", lineHeight: 1.4 }}>{item.title}</p>
-                <p style={{ fontSize: "13px", color: "#5F5E5A", lineHeight: 1.6 }}>{item.desc}</p>
-              </div>
+              <a key={i} href={item.href} style={{ textDecoration: "none" }}>
+                <div style={{ padding: "1.5rem", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#fff", cursor: "pointer", transition: "border-color 0.15s" }}
+                  onMouseEnter={(e) => (e.currentTarget as HTMLDivElement).style.borderColor = "#BA7517"}
+                  onMouseLeave={(e) => (e.currentTarget as HTMLDivElement).style.borderColor = "#D3D1C7"}
+                >
+                  <p style={{ fontFamily: "'Lora', serif", fontSize: "16px", fontWeight: 500, color: "#2C2C2A", marginBottom: "0.5rem", lineHeight: 1.4 }}>{item.title}</p>
+                  <p style={{ fontSize: "13px", color: "#5F5E5A", lineHeight: 1.6, marginBottom: "0.75rem" }}>{item.desc}</p>
+                  <p style={{ fontSize: "12px", color: "#BA7517" }}>Read →</p>
+                </div>
+              </a>
             ))}
           </div>
         </section>
@@ -59,6 +66,7 @@ export default function TheTrap() {
             — The Caregiver&apos;s Trap, Chapter 1
           </cite>
         </section>
+
       </div>
       <Footer />
     </main>
