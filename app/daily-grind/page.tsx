@@ -37,7 +37,7 @@ export default function DailyGrind() {
             {[
               { title: "The Pill Box Deserves Its Own Chapter", desc: "Three dozen medications. Three pharmacies. One caregiver in the middle of all of it.", href: "/daily-grind/pillbox" },
               { title: "When Words Aren't Possible", desc: "The A-Z board. Hand signals. What to build before you need it. Communication systems for the ICU and beyond.", href: null },
-              { title: "ICU Delirium — What Nobody Told Us", desc: "It's common. It's terrifying. It's temporary. Here's what it looks like and how to respond.", href: null },
+              { title: "ICU Delirium — What Nobody Told Us", desc: "It's common. It's terrifying. It's temporary. Here's what it looks like and how to respond.", href: "/daily-grind/icu-delirium" },
               { title: "The Logistics Nobody Talks About", desc: "Where to stay during a long hospitalization. What to bring. How to survive the parking garage.", href: null },
               { title: "Indoor Cameras and Home Safety", desc: "The tools that buy back peace of mind. Cameras, grab bars, supplies to have before you need them.", href: null },
               { title: "It's All About the Poop", desc: "Nobody writes about this. You deal with more than you think — and it's okay. Humor and humility required.", href: null },
