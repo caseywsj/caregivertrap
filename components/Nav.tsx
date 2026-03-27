@@ -8,6 +8,8 @@ export default function Nav() {
     { label: "The trap", href: "/the-trap" },
     { label: "Daily grind", href: "/daily-grind" },
     { label: "Fight back", href: "/fight-back" },
+    { label: "Emotional landscape", href: "/emotional-landscape" },
+    { label: "Hard conversations", href: "/hard-conversations" },
     { label: "Tools", href: "/tools" },
     { label: "Community", href: "/community" },
     { label: "After", href: "/after" },
