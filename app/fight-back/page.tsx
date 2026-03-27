@@ -1,3 +1,4 @@
+"use client";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import JoinCTA from "../../components/JoinCTA";
@@ -7,6 +8,7 @@ export default function FightBack() {
     <main style={{ fontFamily: "'Inter', sans-serif", background: "#FDFAF6", color: "#2C2C2A", minHeight: "100vh" }}>
       <Nav />
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+
         <section style={{ padding: "5rem 2rem 3rem", maxWidth: "680px" }}>
           <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#BA7517", marginBottom: "1rem", fontWeight: 500 }}>
             Section three
@@ -29,21 +31,36 @@ export default function FightBack() {
 
         <section style={{ padding: "0 2rem 4rem" }}>
           <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#888780", marginBottom: "2rem", fontWeight: 500 }}>
-            Coming soon
+            Articles
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1rem", maxWidth: "860px" }}>
             {[
-              { title: "PAY ATTENTION to what they're putting in", desc: "The anti-psychotic prescribed in the ICU that nobody came back to reevaluate. How asking one casual question changed everything." },
-              { title: "Multi-provider care coordination", desc: "The v0.1 document built during a crisis. How to keep multiple specialist teams aligned when the system is designed to keep them apart." },
-              { title: "How to be a credible member of the care team", desc: "They don't want you there. Do it anyway. How to earn trust, ask the right questions, and push back without burning bridges." },
-              { title: "Rejected by three transplant centers", desc: "What to do when the answer is no. How to keep pushing when every institution says stop." },
-              { title: "Decoding the discharge process", desc: "The little d, the big D, the big red C. What hospital discharge actually looks like from the inside." },
-              { title: "The hyperspecific patient knowledge doc", desc: "Raynaud's and the pulse ox. Ultrasound-guided phlebotomy. The things only you know that save lives when you share them." },
+              { title: "PAY ATTENTION to What They're Putting In", desc: "The anti-psychotic prescribed in the ICU that nobody came back to reevaluate. How asking one casual question changed everything.", href: "/fight-back/pay-attention" },
+              { title: "The 45-Minute Argument", desc: "How to fight for your person. The doctor who wanted to put her on a subcutaneous pump. Why I pushed back and why it mattered.", href: null },
+              { title: "Multi-Provider Care Coordination", desc: "The v0.1 document built during a crisis. How to keep multiple specialist teams aligned when the system is designed to keep them apart.", href: null },
+              { title: "Rejected by Three Transplant Centers", desc: "What to do when the answer is no. How to keep pushing when every institution says stop.", href: null },
+              { title: "Decoding the Discharge Process", desc: "The little d, the big D, the big red C. What hospital discharge actually looks like from the inside.", href: null },
+              { title: "The Coordination Gap", desc: "What happens when providers don't talk to each other. The amlodipine story. The limits of advocacy and the honest reckoning with what it can and cannot prevent.", href: null },
             ].map((item, i) => (
-              <div key={i} style={{ padding: "1.5rem", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#fff" }}>
-                <p style={{ fontFamily: "'Lora', serif", fontSize: "16px", fontWeight: 500, color: "#2C2C2A", marginBottom: "0.5rem", lineHeight: 1.4 }}>{item.title}</p>
-                <p style={{ fontSize: "13px", color: "#5F5E5A", lineHeight: 1.6 }}>{item.desc}</p>
-              </div>
+              item.href ? (
+                <a key={i} href={item.href} style={{ textDecoration: "none" }}>
+                  <div
+                    style={{ padding: "1.5rem", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#fff", cursor: "pointer" }}
+                    onMouseEnter={(e) => (e.currentTarget as HTMLDivElement).style.borderColor = "#BA7517"}
+                    onMouseLeave={(e) => (e.currentTarget as HTMLDivElement).style.borderColor = "#D3D1C7"}
+                  >
+                    <p style={{ fontFamily: "'Lora', serif", fontSize: "16px", fontWeight: 500, color: "#2C2C2A", marginBottom: "0.5rem", lineHeight: 1.4 }}>{item.title}</p>
+                    <p style={{ fontSize: "13px", color: "#5F5E5A", lineHeight: 1.6, marginBottom: "0.75rem" }}>{item.desc}</p>
+                    <p style={{ fontSize: "12px", color: "#BA7517" }}>Read →</p>
+                  </div>
+                </a>
+              ) : (
+                <div key={i} style={{ padding: "1.5rem", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#fff" }}>
+                  <p style={{ fontFamily: "'Lora', serif", fontSize: "16px", fontWeight: 500, color: "#2C2C2A", marginBottom: "0.5rem", lineHeight: 1.4 }}>{item.title}</p>
+                  <p style={{ fontSize: "13px", color: "#5F5E5A", lineHeight: 1.6, marginBottom: "0.75rem" }}>{item.desc}</p>
+                  <p style={{ fontSize: "11px", color: "#888780" }}>Coming soon</p>
+                </div>
+              )
             ))}
           </div>
         </section>
@@ -58,6 +75,7 @@ export default function FightBack() {
             — Casey King, The Caregiver&apos;s Trap
           </cite>
         </section>
+
       </div>
       <Footer />
     </main>
