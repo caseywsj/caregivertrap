@@ -33,12 +33,30 @@ export default function After() {
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1rem", maxWidth: "860px" }}>
             {[
-              { title: "Apathy vs. depression", desc: "The distinction that matters. Not caring if you lived or died — that's not the same as being suicidal. What the early days actually feel like." },
-              { title: "Healing doesn't happen inside your condo", desc: "The first and most important decision. Get out. Forward facing. Do the opposite of spiraling." },
-              { title: "The van trip alone", desc: "New Mexico and Colorado. Journals, music, books, making sense of it all. Running toward something even when you don't know what it is." },
-              { title: "The list of 20 friends", desc: "What Casey observed about how others navigated loss. The pattern that made him determined to do the opposite." },
-              { title: "The reinvention", desc: "Look for inspiring things every day. Get comfortable being uncomfortable. Have less of a filter. The three principles that carried him forward." },
-              { title: "Soaring Spirits and Camp Widow", desc: "Places where you can always bring your person. Resources for the long after that actually understand what this is." },
+              {
+                title: "The Camera",
+                desc: "I turned on the home security feed to check on the cats. The living room cam came on and there was Lonna. A stored frame from the last time I'd looked. She was in her spot, waiting for me to help her up. Gutted."
+              },
+              {
+                title: "The Days Have Too Many Hours in Them",
+                desc: "Nobody warns you about this part. Not the sadness — the emptiness. The hours that used to be filled with purpose and are now just hours. The operational reality of early grief."
+              },
+              {
+                title: "Apathy Is Not Depression",
+                desc: "I didn't care if I lived or died. That's not the same as being suicidal. The distinction matters enormously — and I named it accurately on day one."
+              },
+              {
+                title: "Not Without Her — With Her",
+                desc: "She answers back. The playlist. The ring on Carolina's finger. The blinds open every morning. Moving forward doesn't mean leaving behind — it means bringing her along."
+              },
+              {
+                title: "The Morning Ritual",
+                desc: "Day two. Open all the blinds. Look at the view. Say it out loud: I'm alive for another day. It sounds small. It wasn't small. It was the whole thing."
+              },
+              {
+                title: "The Van Trip",
+                desc: "New Mexico. Colorado. The LonnaLungs playlist for the first time — tragic and tears. Brian proposing in Italy with her ring. The healing that happens in motion."
+              },
             ].map((item, i) => (
               <div key={i} style={{ padding: "1.5rem", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#fff" }}>
                 <p style={{ fontFamily: "'Lora', serif", fontSize: "16px", fontWeight: 500, color: "#2C2C2A", marginBottom: "0.5rem", lineHeight: 1.4 }}>{item.title}</p>
