@@ -4,10 +4,30 @@ import { useState } from "react";
 export default function JoinCTA({ message }: { message?: string }) {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) setSubmitted(true);
+    if (!email) return;
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -64,18 +84,24 @@ export default function JoinCTA({ message }: { message?: string }) {
                 outline: "none",
               }}
             />
-            <button type="submit" style={{
-              fontSize: "13px",
-              padding: "8px 20px",
-              borderRadius: "20px",
-              background: "#BA7517",
-              color: "#FDFAF6",
-              border: "none",
-              cursor: "pointer",
-              fontFamily: "'Inter', sans-serif",
-            }}>
-              Join free
+            <button
+              type="submit"
+              disabled={loading}
+              style={{
+                fontSize: "13px",
+                padding: "8px 20px",
+                borderRadius: "20px",
+                background: "#BA7517",
+                color: "#FDFAF6",
+                border: "none",
+                cursor: "pointer",
+                fontFamily: "'Inter', sans-serif",
+                opacity: loading ? 0.7 : 1,
+              }}
+            >
+              {loading ? "Saving..." : "Join free"}
             </button>
+            {error && <p style={{ fontSize: "12px", color: "#E24B4A", width: "100%" }}>{error}</p>}
           </form>
         )}
       </div>
