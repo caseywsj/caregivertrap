@@ -28,6 +28,8 @@ export default function Home() {
   const [storyOffset, setStoryOffset] = useState(0);
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const visibleStories = [
     communityStories[storyOffset % communityStories.length],
@@ -35,9 +37,27 @@ export default function Home() {
     communityStories[(storyOffset + 2) % communityStories.length],
   ];
 
-  const handleEmailSubmit = (e: React.FormEvent) => {
+  const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) setSubmitted(true);
+    if (!email) return;
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -138,11 +158,21 @@ export default function Home() {
               <p style={{ fontSize: "13px", color: "#BA7517", fontStyle: "italic" }}>Thank you — we&apos;ll be in touch.</p>
             ) : (
               <form onSubmit={handleEmailSubmit} style={{ display: "flex", gap: "8px", flexShrink: 0, flexWrap: "wrap" }}>
-                <input type="email" placeholder="your@email.com" value={email} onChange={(e) => setEmail(e.target.value)}
-                  style={{ fontSize: "13px", padding: "7px 14px", border: "0.5px solid #D3D1C7", borderRadius: "20px", background: "#FDFAF6", color: "#2C2C2A", fontFamily: "'Inter', sans-serif", width: "200px", outline: "none" }} />
-                <button type="submit" style={{ fontSize: "13px", padding: "7px 18px", borderRadius: "20px", background: "#BA7517", color: "#FDFAF6", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", whiteSpace: "nowrap" }}>
-                  Notify me
+                <input
+                  type="email"
+                  placeholder="your@email.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  style={{ fontSize: "13px", padding: "7px 14px", border: "0.5px solid #D3D1C7", borderRadius: "20px", background: "#FDFAF6", color: "#2C2C2A", fontFamily: "'Inter', sans-serif", width: "200px", outline: "none" }}
+                />
+                <button
+                  type="submit"
+                  disabled={loading}
+                  style={{ fontSize: "13px", padding: "7px 18px", borderRadius: "20px", background: "#BA7517", color: "#FDFAF6", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", whiteSpace: "nowrap", opacity: loading ? 0.7 : 1 }}
+                >
+                  {loading ? "Saving..." : "Notify me"}
                 </button>
+                {error && <p style={{ fontSize: "12px", color: "#E24B4A", width: "100%" }}>{error}</p>}
               </form>
             )}
           </div>
