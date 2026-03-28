@@ -60,6 +60,24 @@ export default function TheLonelyChapter() {
             <p style={{ marginBottom: "1.5rem" }}>None of it was comfortable. The F1 movie on Day 10 — I sat down, looked at the empty chair next to me, and reached out for her. All of it was necessary anyway.</p>
             <p style={{ marginBottom: "1.5rem" }}>A book I read in those first weeks had a surfer analogy that has stayed with me: you don&apos;t have to catch every wave. But you have to be in the water. Sitting on the beach waiting for the perfect wave is just sitting on the beach.</p>
 
+            <div style={{ background: "#F5F0E8", borderRadius: "8px", padding: "1.5rem", margin: "2rem 0" }}>
+              <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#BA7517", fontWeight: 500, marginBottom: "0.75rem" }}>
+                How to get through the lonely chapter
+              </p>
+              {[
+                "Know it's coming. The first two weeks are the honeymoon period — people show up, meals arrive, texts flood in. It tapers. Plan for after the taper, not just during it.",
+                "Don't wait to feel ready. You will not feel ready. Go anyway. Drive the van. Show up to the lunch. Accept the invitation you'd normally decline.",
+                "Keep 1-2 anchors. You don't need a full social calendar. You need a few people you can call who will actually pick up.",
+                "Get into environments where your future shows up. Tennis clinics. EAA meetings. Old Farts gatherings at the Counter Cafe. You don't find your people by waiting — you position into them.",
+                "Track action, not mood. The days you feel worst are often the days you need to go out most. Mood is unreliable. The calendar is not.",
+                "Embrace the internal work. The lonely chapter is not just about filling time. It's about figuring out who you are when the caregiving is over. That takes quiet. Let it.",
+              ].map((item, i) => (
+                <p key={i} style={{ fontSize: "14px", color: "#5F5E5A", lineHeight: 1.7, marginBottom: "0.5rem" }}>
+                  {item}
+                </p>
+              ))}
+            </div>
+
             <blockquote style={{ fontFamily: "'Lora', serif", fontSize: "18px", fontStyle: "italic", lineHeight: 1.7, color: "#2C2C2A", paddingLeft: "1.5rem", borderLeft: "2px solid #BA7517", margin: "2.5rem 0" }}>
               &ldquo;If you&apos;re not willing to be lonely for a period of time, you&apos;ll never become who you&apos;re capable of becoming.&rdquo;
             </blockquote>
@@ -89,7 +107,7 @@ export default function TheLonelyChapter() {
           </div>
 
         </article>
-        <JoinCTA message="There is an after. And it can be genuinely good." />
+        <JoinCTA message="The world got smaller over six years. It's going to get bigger again. That's not optimism. That's a plan." />
       </div>
       <Footer />
     </main>
