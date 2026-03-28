@@ -37,49 +37,42 @@ export default function After() {
                 title: "The Lonely Chapter",
                 desc: "I don't think I've ever been so sad. I don't think I've ever felt so lonely. The gap between the old life and the new one — and what to do with it.",
                 href: "/after/the-lonely-chapter",
-                live: true
               },
               {
                 title: "The Camera",
                 desc: "I turned on the home security feed to check on the cats. The living room cam came on and there was Lonna. A stored frame from the last time I'd looked. She was in her spot, waiting for me to help her up. Gutted.",
                 href: null,
-                live: false
               },
               {
                 title: "The Days Have Too Many Hours in Them",
                 desc: "Nobody warns you about this part. Not the sadness — the emptiness. The hours that used to be filled with purpose and are now just hours. The operational reality of early grief.",
                 href: null,
-                live: false
               },
               {
                 title: "Apathy Is Not Depression",
                 desc: "I didn't care if I lived or died. That's not the same as being suicidal. The distinction matters enormously — and I named it accurately on day one.",
                 href: null,
-                live: false
               },
               {
                 title: "Not Without Her — With Her",
                 desc: "She answers back. The playlist. The ring on Carolina's finger. The blinds open every morning. Moving forward doesn't mean leaving behind — it means bringing her along.",
                 href: null,
-                live: false
               },
               {
                 title: "The Morning Ritual",
                 desc: "Day two. Open all the blinds. Look at the view. Say it out loud: I'm alive for another day. It sounds small. It wasn't small. It was the whole thing.",
                 href: null,
-                live: false
               },
               {
                 title: "The Van Trip",
                 desc: "New Mexico. Colorado. The LonnaLungs playlist for the first time — tragic and tears. Brian proposing in Italy with her ring. The healing that happens in motion.",
                 href: null,
-                live: false
               },
             ].map((item, i) => (
               <div key={i} style={{ padding: "1.5rem", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#fff" }}>
-                {item.live && item.href ? (
+                {item.href ? (
                   <a href={item.href} style={{ textDecoration: "none" }}>
-                    <p style={{ fontFamily: "'Lora', serif", fontSize: "16px", fontWeight: 500, color: "#BA7517", marginBottom: "0.5rem", lineHeight: 1.4 }}>{item.title}</p>
+                    <p style={{ fontFamily: "'Lora', serif", fontSize: "16px", fontWeight: 500, color: "#2C2C2A", marginBottom: "0.5rem", lineHeight: 1.4 }}>{item.title}</p>
                     <p style={{ fontSize: "13px", color: "#5F5E5A", lineHeight: 1.6 }}>{item.desc}</p>
                   </a>
                 ) : (
