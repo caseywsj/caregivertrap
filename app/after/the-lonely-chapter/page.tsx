@@ -32,34 +32,40 @@ export default function TheLonelyChapter() {
 
           <div style={{ fontSize: "16px", lineHeight: 1.9, color: "#444441", fontWeight: 300 }}>
 
-            <p style={{ marginBottom: "1.5rem" }}>I don&apos;t think I&apos;ve ever been so sad.</p>
-            <p style={{ marginBottom: "1.5rem" }}>I don&apos;t think I&apos;ve ever felt so lonely.</p>
-            <p style={{ marginBottom: "1.5rem" }}>I wrote that on July 29, 2025. The day Lonna died. And I meant both things completely. But here&apos;s what I&apos;ve learned in the months since — they aren&apos;t the same thing. The sadness made sense. The loneliness was something different. Something I wasn&apos;t prepared for. Something nobody really talks about.</p>
-            <p style={{ marginBottom: "1.5rem" }}>What they don&apos;t warn you about is the gap.</p>
-            <p style={{ marginBottom: "1.5rem" }}>The old life is gone. The new life hasn&apos;t arrived yet. And in between those two things is a stretch of road that nobody has a good name for.</p>
-            <p style={{ marginBottom: "1.5rem" }}>I heard it called the Lonely Chapter recently. That&apos;s as good a name as any.</p>
+            <p style={{ marginBottom: "1.5rem" }}>I am so sad.</p>
+            <p style={{ marginBottom: "1.5rem" }}>I am so lonely.</p>
+            <p style={{ marginBottom: "1.5rem" }}>I wrote those two sentences in the CaringBridge post I published the day Lonna died. July 29, 2025. Over 200 texts came in that day. The support was immediate, generous, and real. I meant every word — and I also wrote this, in the same post: I will be okay. I&apos;m not one to mope around.</p>
+            <p style={{ marginBottom: "1.5rem" }}>Both things were true at the same time. That&apos;s the thing about grief nobody prepares you for. It&apos;s not one feeling. It&apos;s several feelings running simultaneously, including some that contradict each other entirely.</p>
+            <p style={{ marginBottom: "1.5rem" }}>The sadness made sense. The loneliness was something I hadn&apos;t fully anticipated. And they weren&apos;t the same thing.</p>
+            <p style={{ marginBottom: "1.5rem" }}>What nobody warns you about is the gap.</p>
+            <p style={{ marginBottom: "1.5rem" }}>The old life is over. The new one hasn&apos;t started yet. In between is a stretch of road with no good name for it. I heard it called the Lonely Chapter recently, and that&apos;s as accurate as anything I&apos;ve found.</p>
 
             <div style={{ width: "40px", height: "1.5px", background: "#BA7517", margin: "2.5rem 0" }} />
 
-            <p style={{ marginBottom: "1.5rem" }}>The world gets smaller when you&apos;re managing a progressive disease. Not dramatically, not all at once — gradually, over years. Scleroderma had been in our life for twenty-five years. The pulmonary involvement started about six years before she passed. And as the oxygen requirements grew and the Houston trips multiplied and the clinic schedule tightened, the radius of what was possible just kept shrinking.</p>
-            <p style={{ marginBottom: "1.5rem" }}>But people didn&apos;t drift. Let me be clear about that. Over a hundred people showed up at Lonna&apos;s celebration of life in April 2025. Her village was real and it showed up. What lapsed were activities — the spontaneous trips, the new adventures, the things that require you to be untethered for a week. You can&apos;t be untethered when someone needs you. That&apos;s not a complaint. That&apos;s just the math.</p>
-            <p style={{ marginBottom: "1.5rem" }}>When it ended I looked up and the friendships were intact. The activities were dusty. And the new life — the wide open, no-limits, big world version — hadn&apos;t started yet.</p>
+            <p style={{ marginBottom: "1.5rem" }}>Here&apos;s how the gap actually forms, because it doesn&apos;t happen overnight.</p>
+            <p style={{ marginBottom: "1.5rem" }}>Scleroderma had been in our life for twenty-five years. It was mostly manageable for the first twenty — Lonna dealt with Raynaud&apos;s, esophageal issues, calcium deposits, finger ulcers, and a rotating cast of complications that would have broken most people. She didn&apos;t complain. She adapted. We adapted. And we still lived — the Camino de Santiago, Colorado every summer, tennis, travel, building something real together.</p>
+            <p style={{ marginBottom: "1.5rem" }}>Then the lungs started going. Pulmonary involvement six years before she passed. The PAH medications ran $30,000 a month retail. The oxygen tanks got heavier. The trips to Houston multiplied. The clinic schedule became the architecture of daily life. By the last couple of years, what do you do when you and your spouse are mostly homebound by necessity? That&apos;s where we were. I could move around enough to pick up food, play some tennis at 10am, handle logistics. Most of the day was spent close to home.</p>
+            <p style={{ marginBottom: "1.5rem" }}>And yet — people didn&apos;t disappear. Let me be absolutely clear about that. On April 19, 2025, we threw a party on the 55th floor of our building. We called it the second anniversary of LonnasLungs. Everyone there knew what it really was — a celebration of life, while she was still here to attend it. Over a hundred people showed up. Lonna loved it. I put together a three-hour playlist — the first six songs all about breathing, the rest all carrying some special meaning. That room was full.</p>
+            <p style={{ marginBottom: "1.5rem" }}>So it wasn&apos;t the friendships that contracted. It was the activities. The spontaneous week away. The untethered adventure. The things that require you to be unreachable for a few days. You can&apos;t be untethered when someone needs you. That&apos;s not a complaint — that&apos;s just the math of caregiving.</p>
+            <p style={{ marginBottom: "1.5rem" }}>When it ended, I looked up. The friendships were intact. The activities were dusty. And the wide-open, no-limits version of life that I kept thinking was coming — it hadn&apos;t started yet.</p>
             <p style={{ marginBottom: "1.5rem" }}>That&apos;s the gap. That&apos;s the lonely chapter.</p>
 
             <div style={{ width: "40px", height: "1.5px", background: "#BA7517", margin: "2.5rem 0" }} />
 
-            <p style={{ marginBottom: "1.5rem" }}>Here&apos;s what it actually looks like from the inside. Day one, I wrote in my journal: the texts will slow down soon. I knew it even then. The outpouring of support in the first two weeks is real and it&apos;s generous and it means everything. And then people go back to their lives — as they should — and you&apos;re left with yours. Which is quieter than it&apos;s ever been.</p>
-            <p style={{ marginBottom: "1.5rem" }}>Two choices in that gap. You can wait for the new life to find you. Or you can go find it.</p>
-            <p style={{ marginBottom: "1.5rem" }}>Waiting is a trap. I&apos;d spent enough time in traps.</p>
-            <p style={{ marginBottom: "1.5rem" }}>Day one I drove the Sprinter. Day three I had lunch with the Nerdy Tech Friday Group. Day nine I got invited to a motorcycle club meetup and a weekly Old Farts gathering at the Counter Cafe. Day eleven I drove out to Georgetown Airport for an EAA meeting and then went to Salt Lick alone. Day twenty-three I was playing tennis and golf at the Broadmoor in Colorado with old friends.</p>
-            <p style={{ marginBottom: "1.5rem" }}>None of it was comfortable. All of it was necessary.</p>
-            <p style={{ marginBottom: "1.5rem" }}>A book I read in those first weeks had a surfer analogy that stuck: you don&apos;t have to catch every wave. But you have to be in the water. Sitting on the beach waiting for the perfect wave is just sitting on the beach.</p>
+            <p style={{ marginBottom: "1.5rem" }}>Day one I wrote in my journal: the texts will slow down soon. I knew it even on July 30th. Two hundred texts on the 29th. Dinner with Bridget and George on Day 3, William Hurley for lunch, Diana and Mike from the building bringing food from Red Farm. Brian and Carolina cleaning the condo. The honeymoon period of grief, where the community wraps around you and the days are actually structured by other people&apos;s generosity.</p>
+            <p style={{ marginBottom: "1.5rem" }}>And then people go back to their lives. As they should.</p>
+            <p style={{ marginBottom: "1.5rem" }}>I sat by the pool on Day 4 — the same couch where Lonna and I had spent countless hours — and I wrote: it makes me feel great to talk about Lonna. But this is the honeymoon period. Soon time will go on and I&apos;ll be more alone and isolated unless I work really hard.</p>
+            <p style={{ marginBottom: "1.5rem" }}>I had the diagnosis before the symptoms fully arrived. So I got to work.</p>
+            <p style={{ marginBottom: "1.5rem" }}>Day one I drove the Sprinter. Day three I had lunch with the Nerdy Tech Friday Group. Day nine I went to the Counter Cafe and came home with invitations to a monthly motorcycle club meetup and a weekly Old Farts gathering. Day eleven I spent five or six hours driving out to Georgetown Airport for an EAA meeting and then went to Salt Lick alone for dinner. Day twenty-three I was playing tennis and golf at the Broadmoor in Colorado.</p>
+            <p style={{ marginBottom: "1.5rem" }}>None of it was comfortable. The F1 movie on Day 10 — I sat down, looked at the empty chair next to me, and reached out for her. All of it was necessary anyway.</p>
+            <p style={{ marginBottom: "1.5rem" }}>A book I read in those first weeks had a surfer analogy that has stayed with me: you don&apos;t have to catch every wave. But you have to be in the water. Sitting on the beach waiting for the perfect wave is just sitting on the beach.</p>
 
             <blockquote style={{ fontFamily: "'Lora', serif", fontSize: "18px", fontStyle: "italic", lineHeight: 1.7, color: "#2C2C2A", paddingLeft: "1.5rem", borderLeft: "2px solid #BA7517", margin: "2.5rem 0" }}>
               &ldquo;If you&apos;re not willing to be lonely for a period of time, you&apos;ll never become who you&apos;re capable of becoming.&rdquo;
             </blockquote>
 
-            <p style={{ marginBottom: "1.5rem" }}>That&apos;s it exactly. The lonely chapter isn&apos;t a problem to solve. It&apos;s internal work. Uncomfortable, necessary, and temporary — if you&apos;re willing to do it.</p>
+            <p style={{ marginBottom: "1.5rem" }}>That&apos;s it exactly. The lonely chapter is not a problem to solve. It&apos;s not a crisis. It&apos;s internal work — uncomfortable, necessary, and temporary, if you&apos;re willing to actually do it.</p>
+            <p style={{ marginBottom: "1.5rem" }}>The world got smaller over six years. It&apos;s going to get bigger again. That&apos;s not optimism. That&apos;s a plan.</p>
             <p style={{ marginBottom: "2.5rem" }}>Get in the water.</p>
 
           </div>
