@@ -41,7 +41,7 @@ export default function After() {
               { title: "The Days Have Too Many Hours in Them", desc: "Nobody warns you about this part. Not the sadness — the emptiness. The hours that used to be filled with purpose and are now just hours. The operational reality of early grief.", href: null },
               { title: "Apathy Is Not Depression", desc: "I didn't care if I lived or died. That's not the same as being suicidal. The distinction matters enormously — and I named it accurately on day one.", href: null },
               { title: "Not Without Her — With Her", desc: "She answers back. The playlist. The ring on Carolina's finger. The blinds open every morning. Moving forward doesn't mean leaving behind — it means bringing her along.", href: null },
-              { title: "The Morning Ritual", desc: "Day two. Open all the blinds. Look at the view. Say it out loud: I'm alive for another day. It sounds small. It wasn't small. It was the whole thing.", href: null },
+              { title: "The Morning Ritual", desc: "Day two. Open all the blinds. Look at the view. Say it out loud: I'm alive for another day. It sounds small. It wasn't small. It was the whole thing.", href: "/after/the-morning-ritual" },
               { title: "The Van Trip", desc: "New Mexico. Colorado. The LonnaLungs playlist for the first time — tragic and tears. Brian proposing in Italy with her ring. The healing that happens in motion.", href: null },
             ].map((item, i) => (
               item.href ? (
