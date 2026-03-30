@@ -75,6 +75,34 @@ export default function Logistics() {
               Beyond parking — you will park in the same garage hundreds of times over a long hospitalization and occasionally still forget where you parked. This is not a memory problem. This is what happens when your cognitive load is maxed out on things that actually matter. Keep a simple system — same entrance, same level, same section, every time.
             </p>
 
+            <p style={{ marginBottom: "1.5rem" }}>Now. The first two nights home after discharge.</p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              Night one: the feeding tube connector was the wrong kind. Not our fault — the supplier sent the wrong equipment. After an hour on the phone with customer support who essentially called me an idiot, I finally convinced them that yes, they had actually sent the wrong connectors, and yes, this was their problem to fix. Lonna went twelve hours without nutrition while we sorted it out. I was convinced this was going to kill her. It did not. You know how clueless you feel bringing your first baby home from the hospital and realizing nobody is supervising you anymore? Exactly like that. Turns out they&apos;re more resilient than you think.
+            </p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              Night two: I was finishing up the evening medication routine — crushing pills, flushing the GJ tube, getting everything settled for the night — when I walked into the bathroom and stopped cold.
+            </p>
+
+            <p style={{ marginBottom: "1.5rem" }}>Blood. Everywhere.</p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              Lonna was on enoxaparin — a blood thinner, self-administered by injection. A wound site had opened up and was not inclined to stop. We had zero bandages in the apartment. Zero dressings. Zero wound care supplies of any kind. The nearby pharmacy had closed an hour earlier.
+            </p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              I want to be honest: this was the only moment in the entire two-and-a-half-year caregiving journey where I was genuinely, completely overwhelmed. Not stressed. Not tired. Overwhelmed. The kind where your brain briefly goes offline.
+            </p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              Lonna was calm. Of course she was. After thirty-three days of ICU, a bleeding wound at midnight is practically routine. She sat there completely composed while I improvised with towels and toilet paper, slowed the bleeding down, found a 24-hour pharmacy twenty minutes away, and drove there alone at midnight. I came back with enough supplies to handle the situation. We laughed about it later.
+            </p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              The next morning I placed a large Amazon order. Bandages in multiple sizes. Wound dressings. Medical tape. Gauze. Antiseptic. A proper first aid kit. Everything a small clinic would stock. Most of it still lives in a bathroom drawer at home today.
+            </p>
+
             <div style={{ background: "#F5F0E8", borderRadius: "8px", padding: "1.5rem", margin: "2rem 0" }}>
               <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#BA7517", fontWeight: 500, marginBottom: "0.75rem" }}>
                 Set up your outpost — first week checklist
@@ -82,12 +110,13 @@ export default function Logistics() {
               <p style={{ fontSize: "14px", color: "#5F5E5A", lineHeight: 1.7, marginBottom: "0.25rem" }}>You are moving. Treat it like one. Find these before you need them urgently:</p>
               {[
                 "Local pharmacy near your housing — not the hospital pharmacy",
-                "Primary care backup for yourself — Amazon One Medical or equivalent. You will get sick. You cannot afford an ER visit for a sinus infection.",
+                "Primary care backup for yourself — Amazon One Medical or equivalent. You will get sick.",
                 "Grocery store — know the route before you need it at 9pm exhausted",
                 "Gas station, ATM, bank branch",
                 "Laundry — if not included in your housing",
                 "A reliable takeout option for the nights you have nothing left",
                 "Parking pass — ask the coordinator on day one",
+                "Wound care supplies, bandages, dressings — before you need them at midnight",
                 "Retail stores for the things you forgot to bring",
               ].map((item, i) => (
                 <p key={i} style={{ fontSize: "14px", color: "#5F5E5A", lineHeight: 1.7, marginBottom: "0.25rem" }}>
@@ -98,10 +127,6 @@ export default function Logistics() {
 
             <p style={{ marginBottom: "1.5rem" }}>
               What to bring for a long hospitalization is something nobody puts in a pamphlet. Comfortable clothes for sitting in a chair for eight hours. A good pillow from home. Your own snacks. Something to do during the long stretches of waiting. Headphones. A charger for every device and a power strip. A small notebook. Cash for parking machines. And non-skid socks — though if you go to REI for those you may end up at Anthropologie next door buying dresses for a wedding your person may or may not attend. True story.
-            </p>
-
-            <p style={{ marginBottom: "1.5rem" }}>
-              The first night home after discharge — before any of the systems are in place — is the hardest logistically. We needed supplies we didn&apos;t have. I made a midnight pharmacy run. The next day I placed a large Amazon order to stock up properly. After that we were ahead of the problem instead of behind it. Get ahead of it before discharge if you can.
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
@@ -124,16 +149,16 @@ export default function Logistics() {
             <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#888780", marginBottom: "1rem", fontWeight: 500 }}>
               Continue reading
             </p>
-            <a href="/fight-back/pay-attention" style={{ textDecoration: "none" }}>
+            <a href="/daily-grind/when-words-arent-possible" style={{ textDecoration: "none" }}>
               <p style={{ fontFamily: "'Lora', serif", fontSize: "18px", color: "#2C2C2A", lineHeight: 1.4, marginBottom: "0.5rem" }}>
-                PAY ATTENTION to What They&apos;re Putting In
+                When Words Aren&apos;t Possible
               </p>
               <p style={{ fontSize: "13px", color: "#BA7517" }}>Read next →</p>
             </a>
           </div>
 
         </article>
-        <JoinCTA message="You are managing a small logistics operation. Treat it like one." />
+        <JoinCTA message="Set up your outpost before you need it. Midnight is too late." />
       </div>
       <Footer />
     </main>
