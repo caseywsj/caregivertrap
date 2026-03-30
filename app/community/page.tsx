@@ -8,10 +8,30 @@ export default function Community() {
   const [story, setStory] = useState("");
   const [phase, setPhase] = useState("");
   const [name, setName] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (story && phase) setSubmitted(true);
+    if (!story || !phase) return;
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/story", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, phase, story }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -82,7 +102,7 @@ export default function Community() {
                   required
                   rows={8}
                   placeholder="What do you wish someone had told you? What got you through? What are you still figuring out?"
-                  style={{ fontSize: "14px", padding: "12px 14px", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#FDFAF6", color: "#2C2C2A", fontFamily: "'Inter', sans-serif", width: "100%", outline: "none", lineHeight: 1.7, resize: "vertical" }}
+                  style={{ fontSize: "14px", padding: "12px 14px", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#FDFAF6", color: "#2C2C2A", fontFamily: "'Inter', sans-serif", width: "100%", outline: "none", lineHeight: 1.7, resize: "vertical" as const }}
                 />
               </div>
               <div>
@@ -97,9 +117,14 @@ export default function Community() {
                   style={{ fontSize: "14px", padding: "8px 14px", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#FDFAF6", color: "#2C2C2A", fontFamily: "'Inter', sans-serif", width: "100%", outline: "none" }}
                 />
               </div>
-              <button type="submit" style={{ fontSize: "14px", padding: "10px 24px", borderRadius: "20px", background: "#BA7517", color: "#FDFAF6", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", alignSelf: "flex-start" as const }}>
-                Share my story
+              <button
+                type="submit"
+                disabled={loading}
+                style={{ fontSize: "14px", padding: "10px 24px", borderRadius: "20px", background: "#BA7517", color: "#FDFAF6", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", alignSelf: "flex-start" as const, opacity: loading ? 0.7 : 1 }}
+              >
+                {loading ? "Sending..." : "Share my story"}
               </button>
+              {error && <p style={{ fontSize: "12px", color: "#E24B4A" }}>{error}</p>}
               <p style={{ fontSize: "11px", color: "#888780", lineHeight: 1.6 }}>
                 Stories are reviewed before publishing. Your first name only will be shown unless you prefer anonymous.
               </p>
