@@ -27,6 +27,8 @@ export default function Nav() {
         .ct-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
         .ct-mobile-menu { display: none; flex-direction: column; background: #FDFAF6; border-top: 0.5px solid #D3D1C7; padding: 1rem 2rem 1.5rem; }
         .ct-mobile-menu.open { display: flex; }
+        .ct-join-btn { font-size: 13px; padding: 7px 18px; border: 0.5px solid #BA7517; border-radius: 20px; color: #BA7517; background: transparent; cursor: pointer; font-family: 'Inter', sans-serif; text-decoration: none; display: inline-block; transition: background 0.15s; }
+        .ct-join-btn:hover { background: #FAEEDA; }
         @media (max-width: 768px) {
           .ct-nav-desktop { display: none !important; }
           .ct-nav-join { display: none !important; }
@@ -53,9 +55,9 @@ export default function Nav() {
             ))}
           </ul>
 
-          <button className="ct-nav-join" style={{ fontSize: "13px", padding: "7px 18px", border: "0.5px solid #BA7517", borderRadius: "20px", color: "#BA7517", background: "transparent", cursor: "pointer", fontFamily: "'Inter', sans-serif" }}>
+          <a href="/community" className="ct-nav-join ct-join-btn">
             Join free
-          </button>
+          </a>
 
           <button className="ct-hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span style={{ display: "block", width: "22px", height: "1.5px", background: menuOpen ? "#BA7517" : "#2C2C2A" }} />
@@ -70,9 +72,9 @@ export default function Nav() {
               {item.label}
             </a>
           ))}
-          <button style={{ fontSize: "14px", padding: "10px 20px", border: "0.5px solid #BA7517", borderRadius: "20px", color: "#BA7517", background: "transparent", cursor: "pointer", fontFamily: "'Inter', sans-serif", marginTop: "1rem", alignSelf: "flex-start" as const }}>
+          <a href="/community" className="ct-join-btn" style={{ marginTop: "1rem", alignSelf: "flex-start", fontSize: "14px", padding: "10px 20px" }}>
             Join free
-          </button>
+          </a>
         </div>
       </nav>
     </>
