@@ -55,7 +55,7 @@ export default function Nav() {
             ))}
           </ul>
 
-          <a href="/community" className="ct-nav-join ct-join-btn">
+          <a href="/join" className="ct-nav-join ct-join-btn">
             Join free
           </a>
 
@@ -72,7 +72,7 @@ export default function Nav() {
               {item.label}
             </a>
           ))}
-          <a href="/community" className="ct-join-btn" style={{ marginTop: "1rem", alignSelf: "flex-start", fontSize: "14px", padding: "10px 20px" }}>
+          <a href="/join" className="ct-join-btn" style={{ marginTop: "1rem", alignSelf: "flex-start", fontSize: "14px", padding: "10px 20px" }}>
             Join free
           </a>
         </div>
