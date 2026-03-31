@@ -24,6 +24,13 @@ const phases = [
   { text: "It's over. I'm trying to figure out what comes next.", href: "/after" },
 ];
 
+const recentArticles = [
+  { title: "The 45-Minute Argument", section: "Fight Back", desc: "I have had dozens of tense interactions with physicians over the years. This one had an audience.", href: "/fight-back/the-45-minute-argument" },
+  { title: "The Morning Ritual", section: "After", desc: "Day two. Open all the blinds. Look at the view. Say it out loud. It sounds small. It wasn't small.", href: "/after/the-morning-ritual" },
+  { title: "The Camera", section: "After", desc: "Day 23. Colorado. I turned on the home security feed to check on the cats.", href: "/after/the-camera" },
+  { title: "The Earth Gym", section: "After", desc: "Put down the devices. Get outside. Meet people. Use your body. This is not a wellness tip.", href: "/after/the-earth-gym" },
+];
+
 export default function Home() {
   const [storyOffset, setStoryOffset] = useState(0);
   const [email, setEmail] = useState("");
@@ -67,13 +74,17 @@ export default function Home() {
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { background: #FDFAF6; }
         .intake-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; max-width: 680px; }
+        .recent-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; max-width: 860px; }
         .proof-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
         .story-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
         .book-strip { display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
         .phase-btn { padding: 1.1rem 1.25rem; border: 0.5px solid #D3D1C7; border-radius: 8px; cursor: pointer; background: #FDFAF6; text-align: left; font-family: 'Lora', serif; font-size: 14px; font-style: italic; line-height: 1.5; color: #2C2C2A; transition: border-color 0.15s, background 0.15s; text-decoration: none; display: block; }
         .phase-btn:hover { border-color: #BA7517; background: #FAEEDA; }
+        .recent-card { padding: 1.5rem; border: 0.5px solid #D3D1C7; border-radius: 8px; background: #fff; text-decoration: none; display: block; transition: border-color 0.15s; }
+        .recent-card:hover { border-color: #BA7517; }
         @media (max-width: 768px) {
           .intake-grid { grid-template-columns: 1fr !important; }
+          .recent-grid { grid-template-columns: 1fr !important; }
           .proof-grid { grid-template-columns: 1fr !important; }
           .story-grid { grid-template-columns: 1fr !important; }
           .book-strip { flex-direction: column; align-items: flex-start; }
@@ -84,6 +95,7 @@ export default function Home() {
 
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
 
+        {/* Hero */}
         <section style={{ padding: "5rem 2rem 3rem", maxWidth: "680px" }}>
           <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase", color: "#BA7517", marginBottom: "1.5rem", fontWeight: 500 }}>
             A resource for caregivers
@@ -99,6 +111,7 @@ export default function Home() {
 
         <div style={{ width: "40px", height: "1.5px", background: "#BA7517", margin: "0 0 3rem 2rem" }} />
 
+        {/* Intake */}
         <section style={{ padding: "0 2rem 4rem" }}>
           <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase", color: "#888780", marginBottom: "1.5rem", fontWeight: 500 }}>
             Where are you right now?
@@ -112,6 +125,35 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Recently Added */}
+        <section style={{ padding: "0 2rem 4rem", borderTop: "0.5px solid #D3D1C7" }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1.5rem", paddingTop: "2rem", flexWrap: "wrap", gap: "0.5rem" }}>
+            <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase", color: "#888780", fontWeight: 500 }}>
+              Recently added
+            </p>
+            <a href="/the-trap" style={{ fontSize: "11px", color: "#BA7517", textDecoration: "none", letterSpacing: "0.5px" }}>
+              Browse all sections →
+            </a>
+          </div>
+          <div className="recent-grid">
+            {recentArticles.map((article, i) => (
+              <a key={i} href={article.href} className="recent-card">
+                <p style={{ fontSize: "10px", letterSpacing: "1px", textTransform: "uppercase", color: "#BA7517", fontWeight: 500, marginBottom: "0.5rem" }}>
+                  {article.section}
+                </p>
+                <p style={{ fontFamily: "'Lora', serif", fontSize: "16px", fontWeight: 500, color: "#2C2C2A", marginBottom: "0.5rem", lineHeight: 1.4 }}>
+                  {article.title}
+                </p>
+                <p style={{ fontSize: "13px", color: "#5F5E5A", lineHeight: 1.6, marginBottom: "0.75rem" }}>
+                  {article.desc}
+                </p>
+                <p style={{ fontSize: "12px", color: "#BA7517" }}>Read →</p>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        {/* Proof quotes */}
         <section style={{ padding: "3rem 2rem", borderTop: "0.5px solid #D3D1C7" }}>
           <div className="proof-grid">
             {[
@@ -127,6 +169,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Community stories */}
         <section style={{ padding: "3rem 2rem", background: "#F5F0E8", borderTop: "0.5px solid #D3D1C7" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.5rem", flexWrap: "wrap", gap: "0.5rem" }}>
             <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase", color: "#888780", fontWeight: 500 }}>
@@ -146,6 +189,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Book strip */}
         <section style={{ padding: "2rem", borderTop: "0.5px solid #D3D1C7" }}>
           <div className="book-strip">
             <div>
@@ -178,6 +222,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Footer quote */}
         <section style={{ padding: "2.5rem 2rem 4rem", borderTop: "0.5px solid #D3D1C7", maxWidth: "580px" }}>
           <blockquote style={{ fontFamily: "'Lora', serif", fontSize: "15px", fontStyle: "italic", lineHeight: 1.8, color: "#5F5E5A", paddingLeft: "1.25rem", borderLeft: "2px solid #BA7517", marginBottom: "0.75rem" }}>
             &ldquo;I am tired of clinging. Though I cannot see it with my eyes, I trust that the current knows where it is going. I shall let go, and let it take me where it will.&rdquo;
