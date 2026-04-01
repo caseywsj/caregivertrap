@@ -28,7 +28,7 @@ const recentArticles = [
   { title: "The 45-Minute Argument", section: "Fight Back", desc: "I have had dozens of tense interactions with physicians over the years. This one had an audience.", href: "/fight-back/the-45-minute-argument" },
   { title: "The Morning Ritual", section: "After", desc: "Day two. Open all the blinds. Look at the view. Say it out loud. It sounds small. It wasn't small.", href: "/after/the-morning-ritual" },
   { title: "The Camera", section: "After", desc: "Day 23. Colorado. I turned on the home security feed to check on the cats.", href: "/after/the-camera" },
-  { title: "The Earth Gym", section: "After", desc: "Put down the devices. Get outside. Meet people. Use your body. This is not a wellness tip.", href: "/after/the-earth-gym" },
+  { title: "Throw the Damn Party", section: "Emotional Landscape", desc: "Easter weekend. A hundred and ten people. Don't save the good words for the eulogy — say them now.", href: "/emotional-landscape/throw-the-damn-party" },
 ];
 
 export default function Home() {
