@@ -142,9 +142,9 @@ export default function ThrowTheDamnParty() {
             <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#888780", marginBottom: "1rem", fontWeight: 500 }}>
               Continue reading
             </p>
-            <a href="/emotional-landscape/miranda-lambert" style={{ textDecoration: "none" }}>
+            <a href="/emotional-landscape" style={{ textDecoration: "none" }}>
               <p style={{ fontFamily: "'Lora', serif", fontSize: "18px", color: "#2C2C2A", lineHeight: 1.4, marginBottom: "0.5rem" }}>
-                Miranda Lambert on Loop
+                More from Emotional Landscape
               </p>
               <p style={{ fontSize: "13px", color: "#BA7517" }}>Read next →</p>
             </a>
