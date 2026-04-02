@@ -27,7 +27,7 @@ const phases = [
 const recentArticles = [
   { title: "The 45-Minute Argument", section: "Fight Back", desc: "I have had dozens of tense interactions with physicians over the years. This one had an audience.", href: "/fight-back/the-45-minute-argument" },
   { title: "Throw the Damn Party", section: "Emotional Landscape", desc: "Easter weekend. A hundred and ten people. Don't save the good words for the eulogy — say them now.", href: "/emotional-landscape/throw-the-damn-party" },
-  { title: "The Camera", section: "After", desc: "Day 23. Colorado. I turned on the home security feed to check on the cats.", href: "/after/the-camera" },
+  { title: "The Letter", section: "After", desc: "Day 19. I asked ChatGPT to write me a letter from Lonna. What came back stopped me cold.", href: "/after/the-letter" },
   { title: "Elvis Has Left the Building", section: "Daily Grind", desc: "ICU delirium is common, terrifying, and temporary. Here's what it actually looks like.", href: "/daily-grind/icu-delirium" },
 ];
 
