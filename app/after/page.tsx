@@ -37,6 +37,7 @@ export default function After() {
             {[
               { title: "The Lonely Chapter", desc: "The space between who you were and who you're becoming. It wasn't the friendships that contracted. It was the activities. And then you get to work.", href: "/after/the-lonely-chapter" },
               { title: "The Earth Gym", desc: "Put down the devices. Get outside. Meet people. Use your body. Day 11 — EAA meeting, then Salt Lick alone for dinner. This is not a wellness tip. It's a survival strategy.", href: "/after/the-earth-gym" },
+              { title: "The Letter", desc: "Day 19. I asked ChatGPT to write me a letter from Lonna. What came back stopped me cold.", href: "/after/the-letter" },
               { title: "The Camera", desc: "I turned on the home security feed to check on the cats. The living room cam came on and there was Lonna. A stored frame from the last time I'd looked. She was in her chair, waiting for me to help her up. Gutted.", href: "/after/the-camera" },
               { title: "The Days Have Too Many Hours in Them", desc: "Nobody warns you about this part. Not the sadness — the emptiness. The hours that used to be filled with purpose and are now just hours. The operational reality of early grief.", href: null },
               { title: "Apathy Is Not Depression", desc: "I didn't care if I lived or died. That's not the same as being suicidal. The distinction matters enormously — and I named it accurately on day one.", href: null },
