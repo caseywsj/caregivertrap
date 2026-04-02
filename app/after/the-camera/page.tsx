@@ -98,9 +98,9 @@ export default function TheCamera() {
             <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#888780", marginBottom: "1rem", fontWeight: 500 }}>
               Continue reading
             </p>
-            <a href="/after/the-days-have-too-many-hours" style={{ textDecoration: "none" }}>
+            <a href="/after/the-letter" style={{ textDecoration: "none" }}>
               <p style={{ fontFamily: "'Lora', serif", fontSize: "18px", color: "#2C2C2A", lineHeight: 1.4, marginBottom: "0.5rem" }}>
-                The Days Have Too Many Hours in Them
+                The Letter
               </p>
               <p style={{ fontSize: "13px", color: "#BA7517" }}>Read next →</p>
             </a>
