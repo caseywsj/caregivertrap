@@ -36,6 +36,7 @@ export default function FightBack() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1rem", maxWidth: "860px" }}>
             {[
               { title: "PAY ATTENTION to What They're Putting In", desc: "The anti-psychotic prescribed in the ICU that nobody came back to reevaluate. How asking one casual question changed everything.", href: "/fight-back/pay-attention" },
+              { title: "Brian, I'm Starting to Forget Things", desc: "A letter to my son — and a system to help when it's your turn. Build it before the fog rolls in.", href: "/fight-back/brian-letter" },
               { title: "The 45-Minute Argument", desc: "How to fight for your person. The doctor who wanted to put her on a subcutaneous pump. Why I pushed back and why it mattered.", href: "/fight-back/the-45-minute-argument" },
               { title: "Multi-Provider Care Coordination", desc: "The v0.1 document built during a crisis. How to keep multiple specialist teams aligned when the system is designed to keep them apart.", href: null },
               { title: "Rejected by Three Transplant Centers", desc: "What to do when the answer is no. How to keep pushing when every institution says stop.", href: null },
