@@ -131,7 +131,7 @@ export default function Home() {
         <section style={{ padding: "0 2rem 4rem", borderTop: "0.5px solid #D3D1C7" }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1.5rem", paddingTop: "2rem", flexWrap: "wrap", gap: "0.5rem" }}>
             <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase", color: "#888780", fontWeight: 500 }}>
-              Recently added
+              Start Here
             </p>
             <a href="/the-trap" style={{ fontSize: "11px", color: "#BA7517", textDecoration: "none", letterSpacing: "0.5px" }}>
               Browse all sections →
