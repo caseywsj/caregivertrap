@@ -29,6 +29,8 @@ const recentArticles = [
   { title: "Throw the Damn Party", section: "Emotional Landscape", desc: "Easter weekend. A hundred and ten people. Don't save the good words for the eulogy — say them now.", href: "/emotional-landscape/throw-the-damn-party" },
   { title: "The Letter", section: "After", desc: "Day 19. I asked ChatGPT to write me a letter from Lonna. What came back stopped me cold.", href: "/after/the-letter" },
   { title: "Elvis Has Left the Building", section: "Daily Grind", desc: "ICU delirium is common, terrifying, and temporary. Here's what it actually looks like.", href: "/daily-grind/icu-delirium" },
+  { title: "Brian, I'm Starting to Forget Things", section: "Fight Back", desc: "A letter to my son — and a system to help when it's your turn. Build it before the fog rolls in.", href: "/fight-back/brian-letter" },
+  { title: "The Camera", section: "After", desc: "Day 23. Colorado. I turned on the home security feed to check on the cats.", href: "/after/the-camera" },
 ];
 
 export default function Home() {
@@ -74,7 +76,7 @@ export default function Home() {
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { background: #FDFAF6; }
         .intake-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; max-width: 680px; }
-        .recent-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; max-width: 860px; }
+        .recent-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; max-width: 1100px; }
         .proof-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
         .story-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
         .book-strip { display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
