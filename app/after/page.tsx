@@ -17,13 +17,13 @@ export default function After() {
             After
           </h1>
           <p style={{ fontSize: "19px", fontFamily: "'Lora', serif", fontStyle: "italic", lineHeight: 1.7, color: "#5F5E5A", marginBottom: "2rem" }}>
-            The closet going barren. The pillow and backpack walking out alone. And then.
+            The caregiving is over. Now what?
           </p>
           <p style={{ fontSize: "16px", lineHeight: 1.8, color: "#5F5E5A", fontWeight: 300, marginBottom: "1.5rem" }}>
-            I knew healing would not happen inside my condo. So I made the effort to be as forward-facing as possible. Talk to people. Travel. Play tennis. Fly airplanes. Meet new people. Have lunches and dinners. Only watch sports on TV. Write in my journal. Read books. Be with my son as much as possible.
+            Nobody prepares you for the After. The grief, yes — but not the emptiness where the purpose used to be. Not the hours that used to be filled with medications and logistics and advocacy and love, now just hours. This section is about what comes next. The rebuilding. The identity that has to be reconstructed from scratch. The surprising ways life finds you again.
           </p>
           <p style={{ fontSize: "16px", lineHeight: 1.8, color: "#5F5E5A", fontWeight: 300 }}>
-            I still think of Lonna every single day. And I wake up, open the blinds, look at the view and say — wow. How lucky am I to be alive. Let&apos;s do something awesome.
+            Written from the inside. Still happening.
           </p>
         </section>
 
@@ -31,7 +31,7 @@ export default function After() {
 
         <section style={{ padding: "0 2rem 4rem" }}>
           <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#888780", marginBottom: "2rem", fontWeight: 500 }}>
-            Essays
+            Articles
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1rem", maxWidth: "860px" }}>
             {[
@@ -39,10 +39,10 @@ export default function After() {
               { title: "The Earth Gym", desc: "Put down the devices. Get outside. Meet people. Use your body. Day 11 — EAA meeting, then Salt Lick alone for dinner. This is not a wellness tip. It's a survival strategy.", href: "/after/the-earth-gym" },
               { title: "The Letter", desc: "Day 19. I asked ChatGPT to write me a letter from Lonna. What came back stopped me cold.", href: "/after/the-letter" },
               { title: "The Camera", desc: "I turned on the home security feed to check on the cats. The living room cam came on and there was Lonna. A stored frame from the last time I'd looked. She was in her chair, waiting for me to help her up. Gutted.", href: "/after/the-camera" },
+              { title: "The Morning Ritual", desc: "Day two. Open all the blinds. Look at the view. Say it out loud: I'm alive for another day. It sounds small. It wasn't small. It was the whole thing.", href: "/after/the-morning-ritual" },
               { title: "The Days Have Too Many Hours in Them", desc: "Nobody warns you about this part. Not the sadness — the emptiness. The hours that used to be filled with purpose and are now just hours. The operational reality of early grief.", href: null },
               { title: "Apathy Is Not Depression", desc: "I didn't care if I lived or died. That's not the same as being suicidal. The distinction matters enormously — and I named it accurately on day one.", href: null },
               { title: "Not Without Her — With Her", desc: "She answers back. The playlist. The ring on Carolina's finger. The blinds open every morning. Moving forward doesn't mean leaving behind — it means bringing her along.", href: null },
-              { title: "The Morning Ritual", desc: "Day two. Open all the blinds. Look at the view. Say it out loud: I'm alive for another day. It sounds small. It wasn't small. It was the whole thing.", href: "/after/the-morning-ritual" },
               { title: "The Van Trip", desc: "New Mexico. Colorado. The LonnaLungs playlist for the first time — tragic and tears. Brian proposing in Italy with her ring. The healing that happens in motion.", href: null },
             ].map((item, i) => (
               item.href ? (
@@ -68,14 +68,14 @@ export default function After() {
           </div>
         </section>
 
-        <JoinCTA message="There is an after. And it can be genuinely good." />
+        <JoinCTA message="The caregiving is over. Now what? Written from the inside. Still happening." />
 
         <section style={{ padding: "3rem 2rem 4rem", maxWidth: "580px" }}>
           <blockquote style={{ fontFamily: "'Lora', serif", fontSize: "15px", fontStyle: "italic", lineHeight: 1.8, color: "#5F5E5A", paddingLeft: "1.25rem", borderLeft: "2px solid #BA7517", marginBottom: "0.75rem" }}>
-            &ldquo;I was never meant to control the outcome. Only to show up with everything I had. And we both did that.&rdquo;
+            &ldquo;Live your life now as fully as possible enriched with their memory.&rdquo;
           </blockquote>
           <cite style={{ fontSize: "11px", color: "#888780", paddingLeft: "1.25rem", display: "block", fontStyle: "normal" }}>
-            — Casey King, journal entry 2025
+            — Soaring Spirits
           </cite>
         </section>
 
