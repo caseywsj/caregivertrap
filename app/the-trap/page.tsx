@@ -38,6 +38,7 @@ export default function TheTrap() {
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1rem", maxWidth: "860px" }}>
             {[
+              { title: "Nobody Is Exempt", desc: "The caregiver trap does not care about your credentials or expertise. It finds the people who love someone and cannot stop showing up. That's everyone.", href: "/the-trap/nobody-is-exempt" },
               { title: "The Disappearing Act", desc: "How competence and love quietly become a cage. The slow disappearance nobody notices — including you.", href: "/the-trap/identity-erosion" },
               { title: "\"You're So Amazing\" — The Loneliest Compliment", desc: "I had an extraordinary village. Not everyone does. Here's what the difference looks like and how to build one.", href: "/the-trap/youre-so-amazing" },
               { title: "Groundhog Day", desc: "The relentless rhythm of caregiving — and how to survive it without losing your mind.", href: "/the-trap/groundhog-day" },
