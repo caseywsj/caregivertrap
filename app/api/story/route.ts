@@ -12,7 +12,7 @@ export async function POST(request: Request) {
     }
 
     await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'casey@caregivertrap.com',
       to: process.env.STORY_NOTIFICATION_EMAIL!,
       subject: `New story submission — ${phase}`,
       html: `
