@@ -1,6 +1,7 @@
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import JoinCTA from "../../components/JoinCTA";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -33,12 +34,27 @@ export default function About() {
 
         <div style={{ width: "40px", height: "1.5px", background: "#BA7517", margin: "0 0 3rem 2rem" }} />
 
+        <section style={{ padding: "0 2rem 3rem" }}>
+          <div style={{ position: "relative", width: "100%", maxWidth: "720px", borderRadius: "8px", overflow: "hidden" }}>
+            <Image
+              src="/lonna-mission-control.jpeg"
+              alt="Lonna in the ICU at Houston Methodist after her double lung transplant — Mission Control"
+              width={1200}
+              height={800}
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
+          </div>
+          <p style={{ fontSize: "12px", color: "#888780", fontStyle: "italic", marginTop: "0.75rem", paddingLeft: "0.25rem" }}>
+            Lonna in the ICU at Houston Methodist, March 2023. Ten days on a ventilator. Fifteen days in the ICU. She walked out.
+          </p>
+        </section>
+
         <section style={{ padding: "0 2rem 4rem", maxWidth: "720px" }}>
           <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#888780", marginBottom: "1.5rem", fontWeight: 500 }}>
             About Lonna
           </p>
           <p style={{ fontSize: "16px", lineHeight: 1.8, color: "#5F5E5A", fontWeight: 300, marginBottom: "1.5rem" }}>
-            Lonna Stacy King was petite and mighty. She went hang gliding for her 50th birthday. She hiked the Camino de Santiago. She had an emerald ring from Disney World, a leather jacket, jewelry she made herself, and an opinion about everything. She never complained. She felt sorry for me even though I never felt sorry for myself.
+            Lonna Stacy King was petite and mighty. She went paragliding for her 50th birthday. She hiked the Camino de Santiago. She had an emerald ring from Disney World, a leather jacket, jewelry she made herself, and an opinion about everything. She never complained. She felt sorry for me even though I never felt sorry for myself.
           </p>
           <p style={{ fontSize: "16px", lineHeight: 1.8, color: "#5F5E5A", fontWeight: 300, marginBottom: "2rem" }}>
             She was always up for some epic adventure. She still is.
