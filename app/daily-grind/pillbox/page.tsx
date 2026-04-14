@@ -30,8 +30,12 @@ export default function Pillbox() {
 
           <div style={{ width: "40px", height: "1.5px", background: "#BA7517", marginBottom: "2.5rem" }} />
 
-          <div style={{ background: "#F5F0E8", border: "0.5px solid #D3D1C7", borderRadius: "8px", padding: "3rem 2rem", textAlign: "center" as const, marginBottom: "0.5rem" }}>
-            <p style={{ fontSize: "13px", color: "#888780", fontStyle: "italic" }}>[Photo: The full medication spread]</p>
+          <div style={{ borderRadius: "8px", overflow: "hidden", marginBottom: "0.5rem" }}>
+            <img
+              src="/lonna-pillbox.jpeg"
+              alt="Lonna's full medication spread — every bottle numbered, rainbow pill organizer in the center"
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
           </div>
           <p style={{ fontSize: "12px", color: "#888780", fontStyle: "italic", textAlign: "center" as const, marginBottom: "2rem" }}>
             A typical week. Every bottle numbered, every time of day accounted for. This is what three dozen medications looks like.
