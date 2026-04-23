@@ -25,7 +25,7 @@ export default function HappinessSmilesFroms() {
           </h1>
 
           <p style={{ fontFamily: "'Lora', serif", fontSize: "18px", fontStyle: "italic", color: "#5F5E5A", lineHeight: 1.6, marginBottom: "2.5rem" }}>
-            Steve Wozniak&apos;s formula. I found it on Day 30. Still the simplest true thing I know.
+            Day 30. A Social Security appointment, three bags to Goodwill, and a formula I borrowed from Steve Wozniak.
           </p>
 
           <div style={{ width: "40px", height: "1.5px", background: "#BA7517", marginBottom: "2.5rem" }} />
@@ -33,7 +33,15 @@ export default function HappinessSmilesFroms() {
           <div style={{ fontSize: "16px", lineHeight: 1.9, color: "#444441", fontWeight: 300 }}>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              I wrote it in my journal on August 28th. One line. No elaboration.
+              August 28, 2025. Thirty days without Lonna. I went to the Social Security office to start the survivor benefits paperwork — appointment in mid-October to actually do it. Dropped three bags at Goodwill on the way home. Found out a friend had died the day before. The kind of day where you don&apos;t know what to do with yourself so you just keep moving.
+            </p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              I wasn&apos;t sleeping through the night. I woke up that morning worrying about the chocolate chip cookie recipe. And the marble cake. Lonna&apos;s recipes. Somewhere in my head at 3am, those felt like the most important things in the world to not lose.
+            </p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              I wrote one line in my journal that day.
             </p>
 
             <p style={{ marginBottom: "1.5rem", fontStyle: "italic" }}>
@@ -45,15 +53,15 @@ export default function HappinessSmilesFroms() {
             </div>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              The frowns are not fully in your control. Loss happens. Grief arrives without asking. You can&apos;t decide not to be sad when something sad occurs. That variable is mostly fixed.
+              It&apos;s simpler than it looks. The frowns are mostly not in your control. Loss happens. Grief arrives without asking. You wake up at 3am worrying about a cookie recipe and there&apos;s nothing to do with that feeling except feel it. That variable is largely fixed.
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              The smiles are different. More controllable than you think. You manufacture them by creating experiences. Memories work — but new experiences are more powerful. A memory is fixed. A new experience is alive. It has surprise in it.
+              The smiles are different. More in your control than you&apos;d think. You go get them. Memories count — but new experiences count more. A memory is fixed. A new experience is alive. It has surprise in it.
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              And community multiplies everything. A smile alone is good. A smile with people around you is better. You can manufacture solo smiles — a long drive, a sunset from the balcony — but community is the amplifier. I have found this to be consistently true.
+              And community multiplies the whole thing. A smile alone is good. A smile with your people around you is better. You can manufacture solo smiles — a long drive, a sunset from the balcony, the van on an empty road in New Mexico — but community is the amplifier. Turns out this is just true.
             </p>
 
             <blockquote style={{ fontFamily: "'Lora', serif", fontSize: "18px", fontStyle: "italic", lineHeight: 1.7, color: "#2C2C2A", paddingLeft: "1.5rem", borderLeft: "2px solid #BA7517", margin: "2.5rem 0" }}>
@@ -61,21 +69,15 @@ export default function HappinessSmilesFroms() {
             </blockquote>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              Happiness is not a persistent state. It&apos;s a score. It goes up and down. The goal is not to eliminate the frowns — impossible — but to keep generating enough smiles that the balance stays positive.
+              Happiness is not a persistent state. It&apos;s a running score. Goes up, goes down. The goal is not to eliminate the frowns — good luck — but to keep generating enough smiles that the balance stays positive most days.
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              And the opposite of happiness is not sadness. Sadness is a feeling — it moves through you if you let it. The opposite of happiness is boredom. Boredom goes nowhere. It generates nothing. It drains you without giving anything back.
+              I wrote something else on Day 30 that I don&apos;t want to gloss over. <em>The thought of living for 20 more years without Lonna is unimaginable. Why would I want to do that?</em> That&apos;s the frown column talking, and it was loud that morning. The formula doesn&apos;t make that question go away. It just gives you something to do with the rest of the day.
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              There&apos;s a companion rule I keep nearby: that which angers you controls you. Anger and boredom are both energy thieves. Recognize them. Name them. Then go find a smile.
-            </p>
-
-            <p style={{ marginBottom: "1.5rem" }}>Don&apos;t be bored.</p>
-
-            <p style={{ marginBottom: "1.5rem" }}>
-              Go find something worth smiling about. Preferably with other people. Preferably something new.
+              Go find a smile. Preferably with other people. Preferably something new.
             </p>
 
             <p style={{ marginBottom: "2.5rem" }}>Woz had it right.</p>
