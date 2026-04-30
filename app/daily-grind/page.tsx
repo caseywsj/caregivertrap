@@ -40,7 +40,7 @@ export default function DailyGrind() {
               { title: "ICU Delirium — What Nobody Told Us", desc: "It's common. It's terrifying. It's temporary. Here's what it looks like and how to respond.", href: "/daily-grind/icu-delirium" },
               { title: "The Logistics Nobody Talks About", desc: "Where to stay during a long hospitalization. What to bring. How to survive the parking garage.", href: "/daily-grind/logistics" },
               { title: "Indoor Cameras and Home Safety", desc: "The tools that buy back peace of mind. Cameras, grab bars, supplies to have before you need them.", href: null },
-              { title: "It's All About the Poop", desc: "Nobody writes about this. You deal with more than you think — and it's okay. Humor and humility required.", href: null },
+              { title: "It's All About the Poop", desc: "The first hand signal we worked out in the ICU was thumbs up. Thumbs up didn't mean I'm okay. Thumbs up meant I pooped. This is the chapter nobody writes.", href: "/daily-grind/its-all-about-the-poop" },
             ].map((item, i) => (
               item.href ? (
                 <a key={i} href={item.href} style={{ textDecoration: "none" }}>
