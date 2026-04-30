@@ -30,7 +30,7 @@ const recentArticles = [
   { title: "The Letter", section: "After", desc: "Day 19. I asked ChatGPT to write me a letter from Lonna. What came back stopped me cold.", href: "/after/the-letter" },
   { title: "Elvis Has Left the Building", section: "Daily Grind", desc: "ICU delirium is common, terrifying, and temporary. Here's what it actually looks like.", href: "/daily-grind/icu-delirium" },
   { title: "Brian, I'm Starting to Forget Things", section: "Fight Back", desc: "A letter to my son — and a system to help when it's your turn. Build it before the fog rolls in.", href: "/fight-back/brian-letter" },
-  { title: "The Pulmonary Rehab Takeover", section: "Fight Back", desc: "The generic program was designed for the average patient. Lonna was not the average patient. And I was not a perfectly average caregiver.", href: "/fight-back/pulmonary-rehab-takeover" },
+  { title: "It's All About the Poop", section: "Daily Grind", desc: "The first hand signal we worked out in the ICU was thumbs up. Thumbs up didn't mean I'm okay. Thumbs up meant I pooped.", href: "/daily-grind/its-all-about-the-poop" },
 ];
 
 export default function Home() {
