@@ -32,7 +32,16 @@ export default function TheTrap() {
 
         <div style={{ width: "40px", height: "1.5px", background: "#BA7517", margin: "0 0 3rem 2rem" }} />
 
-        <section style={{ padding: "0 2rem 4rem" }}>
+        <section style={{ padding: "0 2rem 2rem", maxWidth: "680px" }}>
+          <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#BA7517", marginBottom: "0.75rem", fontWeight: 500 }}>
+            🎧 Listen to this section
+          </p>
+          <p style={{ fontSize: "13px", color: "#888780", marginBottom: "1rem", fontStyle: "italic" }}>A 20-minute audio summary of The Trap — updated as new articles are added.</p>
+          <div id="buzzsprout-player-19115413"></div>
+          <script src="https://www.buzzsprout.com/2615249/episodes/19115413-the-caregiver-s-trap-a-roadmap-for-preservation-and-connection.js?container_id=buzzsprout-player-19115413&player=small" type="text/javascript" charset="utf-8"></script>
+        </section>
+
+                <section style={{ padding: "0 2rem 4rem" }}>
           <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#888780", marginBottom: "2rem", fontWeight: 500 }}>
             Articles
           </p>
