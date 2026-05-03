@@ -38,7 +38,7 @@ export default function TheTrap() {
           </p>
           <p style={{ fontSize: "13px", color: "#888780", marginBottom: "1rem", fontStyle: "italic" }}>A 20-minute audio summary of The Trap — updated as new articles are added.</p>
           <div id="buzzsprout-player-19115413"></div>
-          <script src="https://www.buzzsprout.com/2615249/episodes/19115413-the-caregiver-s-trap-a-roadmap-for-preservation-and-connection.js?container_id=buzzsprout-player-19115413&player=small" type="text/javascript" charset="utf-8"></script>
+          <script src="https://www.buzzsprout.com/2615249/episodes/19115413-the-caregiver-s-trap-a-roadmap-for-preservation-and-connection.js?container_id=buzzsprout-player-19115413&player=small" type="text/javascript"</script>
         </section>
 
                 <section style={{ padding: "0 2rem 4rem" }}>
