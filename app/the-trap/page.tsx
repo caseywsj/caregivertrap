@@ -1,9 +1,21 @@
 "use client";
+import { useEffect } from "react";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import JoinCTA from "../../components/JoinCTA";
 
 export default function TheTrap() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://www.buzzsprout.com/2615249/episodes/19115413-the-caregiver-s-trap-a-roadmap-for-preservation-and-connection.js?container_id=buzzsprout-player-19115413&player=small";
+    script.type = "text/javascript";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <main style={{ fontFamily: "'Inter', sans-serif", background: "#FDFAF6", color: "#2C2C2A", minHeight: "100vh" }}>
       <Nav />
@@ -38,7 +50,7 @@ export default function TheTrap() {
           </p>
           <p style={{ fontSize: "13px", color: "#888780", marginBottom: "1rem", fontStyle: "italic" }}>A 20-minute audio summary of The Trap — updated as new articles are added.</p>
           <div id="buzzsprout-player-19115413"></div>
-          <div dangerouslySetInnerHTML={{ __html: '<script src="https://www.buzzsprout.com/2615249/episodes/19115413-the-caregiver-s-trap-a-roadmap-for-preservation-and-connection.js?container_id=buzzsprout-player-19115413&player=small" type="text/javascript"></script>' }} />
+
         </section>
 
                 <section style={{ padding: "0 2rem 4rem" }}>
