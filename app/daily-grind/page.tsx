@@ -1,9 +1,21 @@
 "use client";
+import { useEffect } from "react";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import JoinCTA from "../../components/JoinCTA";
 
 export default function DailyGrind() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://www.buzzsprout.com/2615249/episodes/19115487-the-caregiver-s-trap-survival-logistics-and-the-daily-grind.js?container_id=buzzsprout-player-19115487&player=small";
+    script.type = "text/javascript";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <main style={{ fontFamily: "'Inter', sans-serif", background: "#FDFAF6", color: "#2C2C2A", minHeight: "100vh" }}>
       <Nav />
@@ -28,6 +40,14 @@ export default function DailyGrind() {
         </section>
 
         <div style={{ width: "40px", height: "1.5px", background: "#BA7517", margin: "0 0 3rem 2rem" }} />
+
+        <section style={{ padding: "0 2rem 2rem", maxWidth: "680px" }}>
+          <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#BA7517", marginBottom: "0.75rem", fontWeight: 500 }}>
+            🎧 Listen to this section
+          </p>
+          <p style={{ fontSize: "13px", color: "#888780", marginBottom: "1rem", fontStyle: "italic" }}>A 20-minute audio summary of Daily Grind — updated as new articles are added.</p>
+          <div id="buzzsprout-player-19115487"></div>
+        </section>
 
         <section style={{ padding: "0 2rem 4rem" }}>
           <p style={{ fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#888780", marginBottom: "2rem", fontWeight: 500 }}>
