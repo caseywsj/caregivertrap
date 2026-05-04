@@ -35,6 +35,7 @@ export default function FightBack() {
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1rem", maxWidth: "860px" }}>
             {[
+              { title: "The Medical Divorce", desc: "The cleanest path I could find to keep my wife of 42 years insured was to divorce her. Then I ran into Clarence.", href: "/fight-back/medical-divorce" },
               { title: "PAY ATTENTION to What They're Putting In", desc: "The anti-psychotic prescribed in the ICU that nobody came back to reevaluate. How asking one casual question changed everything.", href: "/fight-back/pay-attention" },
               { title: "The Pulmonary Rehab Takeover", desc: "The generic program was designed for the average patient. Lonna was not the average patient. And I was not a perfectly average caregiver.", href: "/fight-back/pulmonary-rehab-takeover" },
               { title: "Brian, I'm Starting to Forget Things", desc: "A letter to my son — and a system to help when it's your turn. Build it before the fog rolls in.", href: "/fight-back/brian-letter" },
