@@ -1,3 +1,4 @@
+"use client";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import JoinCTA from "../../components/JoinCTA";
@@ -33,17 +34,31 @@ export default function HardConversations() {
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1rem", maxWidth: "860px" }}>
             {[
-              { title: "The redlines conversation", desc: "How to have it before you need it. What to cover, how to document it, and how to revisit it as circumstances change." },
-              { title: "Advance directives, DNRs, and wills", desc: "Plain English guide to the legal documents every caregiver needs. Not scary — necessary." },
-              { title: "Palliative vs. hospice", desc: "What the words actually mean. The difference between managing symptoms and accepting the end." },
-              { title: "\"Full comfort care\"", desc: "Knowing what those words mean before you hear them at 1:49am. The most important three words in end-of-life care." },
-              { title: "Lonna's List", desc: "The patient perspective. What she wished the caregiver knew. No sacred cows." },
-              { title: "End of life hospice is a beautiful thing", desc: "But you need to be prepared for it. What it actually looks like. The basket of snacks at 3:50am." },
+              { title: "Full Comfort Care", desc: "Knowing what those words mean before you hear them at 1:49am. The most important three words in end-of-life care.", href: "/hard-conversations/full-comfort-care" },
+              { title: "The Redlines Conversation", desc: "How to have it before you need it. What to cover, how to document it, and how to revisit it as circumstances change.", href: null },
+              { title: "Advance Directives, DNRs, and Wills", desc: "Plain English guide to the legal documents every caregiver needs. Not scary — necessary.", href: null },
+              { title: "Palliative vs. Hospice", desc: "What the words actually mean. The difference between managing symptoms and accepting the end.", href: null },
+              { title: "Lonna's List", desc: "The patient perspective. What she wished the caregiver knew. No sacred cows.", href: null },
             ].map((item, i) => (
-              <div key={i} style={{ padding: "1.5rem", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#fff" }}>
-                <p style={{ fontFamily: "'Lora', serif", fontSize: "16px", fontWeight: 500, color: "#2C2C2A", marginBottom: "0.5rem", lineHeight: 1.4 }}>{item.title}</p>
-                <p style={{ fontSize: "13px", color: "#5F5E5A", lineHeight: 1.6 }}>{item.desc}</p>
-              </div>
+              item.href ? (
+                <a key={i} href={item.href} style={{ textDecoration: "none" }}>
+                  <div
+                    style={{ padding: "1.5rem", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#fff", cursor: "pointer" }}
+                    onMouseEnter={(e) => (e.currentTarget as HTMLDivElement).style.borderColor = "#BA7517"}
+                    onMouseLeave={(e) => (e.currentTarget as HTMLDivElement).style.borderColor = "#D3D1C7"}
+                  >
+                    <p style={{ fontFamily: "'Lora', serif", fontSize: "16px", fontWeight: 500, color: "#2C2C2A", marginBottom: "0.5rem", lineHeight: 1.4 }}>{item.title}</p>
+                    <p style={{ fontSize: "13px", color: "#5F5E5A", lineHeight: 1.6, marginBottom: "0.75rem" }}>{item.desc}</p>
+                    <p style={{ fontSize: "12px", color: "#BA7517" }}>Read →</p>
+                  </div>
+                </a>
+              ) : (
+                <div key={i} style={{ padding: "1.5rem", border: "0.5px solid #D3D1C7", borderRadius: "8px", background: "#fff" }}>
+                  <p style={{ fontFamily: "'Lora', serif", fontSize: "16px", fontWeight: 500, color: "#2C2C2A", marginBottom: "0.5rem", lineHeight: 1.4 }}>{item.title}</p>
+                  <p style={{ fontSize: "13px", color: "#5F5E5A", lineHeight: 1.6, marginBottom: "0.75rem" }}>{item.desc}</p>
+                  <p style={{ fontSize: "11px", color: "#888780" }}>Coming soon</p>
+                </div>
+              )
             ))}
           </div>
         </section>
