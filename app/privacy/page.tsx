@@ -59,7 +59,7 @@ export default function Privacy() {
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              Message and data rates may apply. Message frequency varies based on the app user&apos;s activity.
+              Message and data rates may apply. Message frequency varies based on the app user&apos;s activity. Carriers are not liable for delayed or undelivered messages.
             </p>
 
             <p style={{ fontSize: "16px", fontWeight: 500, color: "#2C2C2A", marginBottom: "0.75rem", marginTop: "2rem" }}>Health Information</p>
