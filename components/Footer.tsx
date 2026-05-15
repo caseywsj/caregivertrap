@@ -8,7 +8,7 @@ export default function Footer() {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
-      flexWrap: "wrap",
+      flexWrap: "wrap" as const,
       gap: "1rem",
     }}>
       <div style={{
@@ -22,15 +22,20 @@ export default function Footer() {
         fontSize: "11px",
         color: "#888780",
         letterSpacing: "1px",
-        textTransform: "uppercase",
+        textTransform: "uppercase" as const,
       }}>
         An OpenRoads Project
       </div>
       <div style={{
         fontSize: "11px",
         color: "#888780",
+        display: "flex",
+        gap: "1.5rem",
+        alignItems: "center",
       }}>
-        © 2026 OpenRoads Consulting
+        <span>© 2026 OpenRoads Consulting</span>
+        <a href="/privacy" style={{ color: "#888780", textDecoration: "none" }}>Privacy</a>
+        <a href="/terms" style={{ color: "#888780", textDecoration: "none" }}>Terms</a>
       </div>
     </footer>
   );
