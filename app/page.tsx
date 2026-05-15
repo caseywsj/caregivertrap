@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const communityStories = [
   { phase: "Deep in the grind", text: "You make me feel like I am there. Like someone finally understands what this actually looks like." },
