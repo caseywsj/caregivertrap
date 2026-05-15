@@ -90,7 +90,7 @@ export default function Privacy() {
 
             <p style={{ marginBottom: "0.5rem" }}>For questions about this Privacy Policy or how we handle your information, contact:</p>
             <p style={{ marginBottom: "0.5rem" }}>OpenRoads Consulting, LLC</p>
-            <p style={{ marginBottom: "1.5rem" }}>Email: <a href="mailto:casey@caregivertrap.com" style={{ color: "#BA7517", textDecoration: "none" }}>casey@caregivertrap.com</a></p>
+            <p style={{ marginBottom: "1.5rem" }}>Email: <a href="mailto:caseywsj@gmail.com" style={{ color: "#BA7517", textDecoration: "none" }}>caseywsj@gmail.com</a></p>
 
           </div>
         </article>
