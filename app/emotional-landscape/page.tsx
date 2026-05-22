@@ -36,7 +36,7 @@ export default function EmotionalLandscape() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1rem", maxWidth: "860px" }}>
             {[
               { title: "Throw the Damn Party", desc: "Easter weekend. A hundred and ten people. Don't save the good words for the eulogy — say them now, while your person is still there to hear them.", href: "/emotional-landscape/throw-the-damn-party" },
-              { title: "Miranda Lambert on Loop", desc: "The playlist that got me through the ICU. Music as medicine — and why the right song at the right moment is not a small thing.", href: null },
+              { title: "The Playlist", desc: "The playlist I built for her celebration of life. What it did in the ICU. What it does now. The songs that mean one thing before and another thing after.", href: "/emotional-landscape/the-playlist" },
               { title: "The Waiter Trick", desc: "Give people something specific to do. Vague offers of help disappear. Specific asks get answered. How to let your village actually help you.", href: null },
               { title: "Avoid Anger", desc: "That which angers you controls you. The hardest emotional discipline in caregiving — and why it matters more than you think.", href: null },
               { title: "The World Getting Smaller", desc: "It happens gradually. The friendships, the activities, the range of motion. What contracts during caregiving and how to keep it from closing entirely.", href: null },
