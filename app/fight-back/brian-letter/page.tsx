@@ -25,7 +25,7 @@ export default function BrianLetter() {
           </h1>
 
           <p style={{ fontFamily: "'Lora', serif", fontSize: "18px", fontStyle: "italic", color: "#5F5E5A", lineHeight: 1.6, marginBottom: "2.5rem" }}>
-            A letter to my son — and a system to help when it&apos;s your turn.
+            A letter to my son — and the systems to put in place before you need them.
           </p>
 
           <div style={{ width: "40px", height: "1.5px", background: "#BA7517", marginBottom: "2.5rem" }} />
@@ -163,6 +163,42 @@ export default function BrianLetter() {
               </p>
             </div>
 
+            <p style={{ marginBottom: "1rem", fontWeight: 500, color: "#2C2C2A" }}>A 15-minute thing to do this month</p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              There&apos;s one more feature on your iPhone that almost nobody knows exists, and the window to use it closes earlier than you&apos;d think.
+            </p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              It&apos;s called Personal Voice. Buried in Settings, under Accessibility. You sit in a quiet room and read 150 short phrases out loud — about 15 minutes total. Your phone trains a synthetic version of your voice on the device, overnight, without sending the audio anywhere. After that, you can type anything and have it played back in your own voice through Live Speech.
+            </p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              Apple built it for people losing the ability to speak — ALS, throat cancer, vocal cord paralysis, advanced Parkinson&apos;s. The point is this: if you record yourself while your voice is strong, you have a banked copy of it for whatever comes later. It&apos;s a 15-minute insurance policy that you cannot take out once you need it.
+            </p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              I&apos;m not losing my voice. I&apos;m recording mine anyway. So should you, eventually. Not because anything is wrong, but because the only version of this feature that works is the version you set up before you need it. Same argument as everything else in this letter.
+            </p>
+
+            <p style={{ marginBottom: "1rem", fontWeight: 500, color: "#2C2C2A" }}>About your mother</p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              Personal Voice didn&apos;t exist when Lonna was well. It shipped in late 2023, and by then she was post-transplant and battling, and by the time I might have thought to ask her to sit and read 150 sentences into a phone, the window had already closed. I didn&apos;t know about it. She didn&apos;t know about it. Nobody told us.
+            </p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              I&apos;m telling you now. If there&apos;s ever a person in your life facing a diagnosis that might touch their voice — even years out — don&apos;t wait. The feature is free. The setup is 15 minutes. The thing it preserves, you cannot get back.
+            </p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              That&apos;s the whole point of this letter. Set up the systems while it&apos;s still easy. Some of them are for me. This one is for whoever comes next.
+            </p>
+
+            <p style={{ marginBottom: "1.5rem" }}>
+              Record yours too. When your kids are grown and your granddaughter wants to hear you read her a bedtime story, you&apos;ll be glad you did it in your forties when your voice was clear and your time was your own.
+            </p>
+
             <p style={{ marginBottom: "1rem", fontWeight: 500, color: "#2C2C2A" }}>Why I&apos;m writing this now</p>
 
             <p style={{ marginBottom: "1.5rem" }}>
@@ -197,7 +233,7 @@ export default function BrianLetter() {
 
             <div style={{ background: "#F5F0E8", borderLeft: "2px solid #D3D1C7", padding: "1rem 1.25rem", borderRadius: "0 8px 8px 0", marginBottom: "1rem" }}>
               <p style={{ fontSize: "13px", color: "#5F5E5A", lineHeight: 1.7 }}>
-                <strong style={{ color: "#2C2C2A", fontWeight: 500 }}>A note for caregivers reading this:</strong> If you&apos;re supporting someone already showing early signs of cognitive decline, these tools — daily handwritten card, scheduled voice reminders, wrist notifications, passive check-in reporting, and the iPhone features above — form the simplest evidence-supported starting point available. The card anchors orientation. The Alexa handles prospective memory. The watch closes the gap when audio fails. The morning text closes the loop for the family. Start here, add complexity only if you need to. And talk to your doctor — cognitive changes have medical dimensions that a good system can support but never replace.
+                <strong style={{ color: "#2C2C2A", fontWeight: 500 }}>A note for caregivers reading this:</strong> If you&apos;re supporting someone already showing early signs of cognitive decline, these tools — daily handwritten card, scheduled voice reminders, wrist notifications, passive check-in reporting, and the iPhone features above — form the simplest evidence-supported starting point available. The card anchors orientation. The Alexa handles prospective memory. The watch closes the gap when audio fails. The morning text closes the loop for the family. Personal Voice is a separate matter — a one-time setup that preserves something the rest of the system can&apos;t. Start here, add complexity only if you need to. And talk to your doctor — cognitive changes have medical dimensions that a good system can support but never replace.
               </p>
             </div>
 
