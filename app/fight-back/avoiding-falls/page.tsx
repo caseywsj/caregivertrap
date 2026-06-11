@@ -25,7 +25,7 @@ export default function AvoidingFalls() {
           </h1>
 
           <p style={{ fontFamily: "'Lora', serif", fontSize: "18px", fontStyle: "italic", color: "#5F5E5A", lineHeight: 1.6, marginBottom: "2.5rem" }}>
-            Falls are almost never one dramatic event. They&apos;re a cascade — and most of it can be rewritten before gravity gets involved.
+            Falls are almost never one dramatic event. They&apos;re a cascade. Most of it can be rewritten before gravity gets involved.
           </p>
 
           <div style={{ width: "40px", height: "1.5px", background: "#BA7517", marginBottom: "2.5rem" }} />
@@ -37,7 +37,7 @@ export default function AvoidingFalls() {
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              The first one was in the hospital, with a nurse standing right next to her. I&apos;m still not sure how that happens physically — the human body needs at least two failures to hit the floor when someone is already touching you — but it happened. The bruising was unbelievable. She was sore for weeks.
+              The first one was in the hospital, with a nurse standing right next to her. I&apos;m still not sure how that happens physically. The human body needs at least two failures to hit the floor when someone is already touching you. But it happened. The bruising was unbelievable. She was sore for weeks.
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
@@ -49,7 +49,7 @@ export default function AvoidingFalls() {
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              The anti-rejection meds destroy your bone density. That&apos;s not an opinion or a side effect on a pamphlet — it&apos;s the central engineering problem of long-term transplant survival. By 2024 and into 2025, Lonna had four compression fractures in her back. The chart phrase was &ldquo;significant and worsening osteoporosis.&rdquo; We were trying to get her on the bone-building infusions, but you can&apos;t start those until you&apos;ve had any infected or at-risk teeth extracted, and she needed five out. The teeth were on the schedule. The schedule kept getting blown up by hospitalizations. So we lived in a window where one good fall would undo everything the transplant team had built. Every pill. Every infusion. Every thirty-five-night hotel stay before she got listed. All of it. Gone.
+              The anti-rejection meds destroy your bone density. That&apos;s not an opinion or a side effect on a pamphlet. It&apos;s the central engineering problem of long-term transplant survival. By 2024 and into 2025, Lonna had four compression fractures in her back. The chart phrase was &ldquo;significant and worsening osteoporosis.&rdquo; We were trying to get her on the bone-building infusions, but you can&apos;t start those until you&apos;ve had any infected or at-risk teeth extracted, and she needed five out. The teeth were on the schedule. The schedule kept getting blown up by hospitalizations. So we lived in a window where one good fall would undo everything the transplant team had built. Every pill. Every infusion. Every thirty-five-night hotel stay before she got listed. All of it. Gone.
             </p>
 
             <blockquote style={{ fontFamily: "'Lora', serif", fontSize: "18px", fontStyle: "italic", lineHeight: 1.7, color: "#2C2C2A", paddingLeft: "1.5rem", borderLeft: "2px solid #BA7517", margin: "2.5rem 0" }}>
@@ -73,7 +73,7 @@ export default function AvoidingFalls() {
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              A friend&apos;s ex-husband fell the night after back surgery. A neighborhood friend&apos;s spouse — already in an assisted living facility, already in a wheelchair — somehow managed to fall <em>out</em> of the wheelchair. WTF. Then at a memorial service yesterday I ran into another friend who&apos;s actively training on some balance pad contraption.
+              A friend&apos;s ex-husband fell the night after back surgery. A neighborhood friend&apos;s spouse was already in an assisted living facility, already in a wheelchair, and somehow managed to fall <em>out</em> of the wheelchair. WTF. Then at a memorial service yesterday I ran into another friend who&apos;s actively training on some balance pad contraption.
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
@@ -89,7 +89,7 @@ export default function AvoidingFalls() {
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              <strong style={{ color: "#2C2C2A", fontWeight: 500 }}>1. Stay active.</strong> Functional strength training. Pilates. Tennis. Dancing. Golf. Honestly anything that gets your ass off the couch. I&apos;ve heard horror stories about pickleball injuries so be careful out there — but the alternative is worse.
+              <strong style={{ color: "#2C2C2A", fontWeight: 500 }}>1. Stay active.</strong> Functional strength training. Pilates. Tennis. Dancing. Golf. Honestly anything that gets your ass off the couch. I&apos;ve heard horror stories about pickleball injuries so be careful out there. The alternative is worse.
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
@@ -97,15 +97,15 @@ export default function AvoidingFalls() {
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              <strong style={{ color: "#2C2C2A", fontWeight: 500 }}>3. Stop doing the moves that start falls.</strong> Crossover steps are a top one. I have to crossover step when I play tennis, so I get that you can&apos;t always avoid them — but most people in their kitchen don&apos;t need to.
+              <strong style={{ color: "#2C2C2A", fontWeight: 500 }}>3. Stop doing the moves that start falls.</strong> Crossover steps are a top one. I have to crossover step when I play tennis, so I get that you can&apos;t always avoid them. But most people in their kitchen don&apos;t need to.
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              <strong style={{ color: "#2C2C2A", fontWeight: 500 }}>4. Learn how to fall. Learn how to get up.</strong> We fell constantly as kids and most of us walked away. There&apos;s a way to do it. Stay low. Roll. Don&apos;t catch yourself with a locked wrist. And then — this part shocked me — practice getting <em>up</em> off the floor. Lonna could not get herself off the floor by herself. Not even close. When the moment came, that mattered.
+              <strong style={{ color: "#2C2C2A", fontWeight: 500 }}>4. Learn how to fall. Learn how to get up.</strong> We fell constantly as kids and most of us walked away. There&apos;s a way to do it. Stay low. Roll. Don&apos;t catch yourself with a locked wrist. And then practice getting <em>up</em> off the floor. This part shocked me. Lonna could not get herself off the floor by herself. Not even close. When the moment came, that mattered.
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              <strong style={{ color: "#2C2C2A", fontWeight: 500 }}>5. Fall-proof the house.</strong> We baby-proofed for the kids thirty years ago. Do it again, for yourself. Grab bars in the bathroom. Rugs out of hallways. Declutter. Soft-edged furniture if you&apos;re buying new. Built-in handrail paths from bedroom to bathroom. Nightlights. Smart home automation so you&apos;re not fumbling for light switches at 3am. Raise the toilets. Raise the chairs. Your house gets smaller out of necessity whether you like it or not — better to do it on your terms.
+              <strong style={{ color: "#2C2C2A", fontWeight: 500 }}>5. Fall-proof the house.</strong> We baby-proofed for the kids thirty years ago. Do it again, for yourself. Grab bars in the bathroom. Rugs out of hallways. Declutter. Soft-edged furniture if you&apos;re buying new. Built-in handrail paths from bedroom to bathroom. Nightlights. Smart home automation so you&apos;re not fumbling for light switches at 3am. Raise the toilets. Raise the chairs. Your house gets smaller out of necessity whether you like it or not. Better to do it on your terms.
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
@@ -113,7 +113,7 @@ export default function AvoidingFalls() {
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              <strong style={{ color: "#2C2C2A", fontWeight: 500 }}>6. Does this medication increase fall risk?</strong> Pilots use a checklist before they fly called IMSAFE — Illness, Medication, Stress, Alcohol, Fatigue, Eating. It&apos;s not a bad checklist for getting out of bed in the morning either. Run yourself through it. If even one box is lit up, slow down.
+              <strong style={{ color: "#2C2C2A", fontWeight: 500 }}>6. Does this medication increase fall risk?</strong> Pilots use a checklist before they fly called IMSAFE. Illness, Medication, Stress, Alcohol, Fatigue, Eating. It&apos;s not a bad checklist for getting out of bed in the morning either. Run yourself through it. If even one box is lit up, slow down.
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
@@ -155,7 +155,7 @@ export default function AvoidingFalls() {
               {[
                 { label: "Balance on one leg.", text: "Both sides. Time it. Eyes open is the easy version; eyes closed is the real test. Under ten seconds at sixty-plus is a flag. Have a chair or counter within arm's reach before you start." },
                 { label: "Stand up from a chair without using your hands.", text: "Once. Then five times in a row, no pause. If your hands reach for the armrest, your quads aren't where they need to be." },
-                { label: "Lay down on the floor and get back up.", text: "No couch-assist. No grabbing the coffee table. If you can't, that's the work — and now you know. Search YouTube for \"senior get off floor\" and you'll find exactly what to practice." },
+                { label: "Lay down on the floor and get back up.", text: "No couch-assist. No grabbing the coffee table. If you can't, that's the work. Now you know. Search YouTube for \"senior get off floor\" and you'll find exactly what to practice." },
               ].map((item, i) => (
                 <p key={i} style={{ fontSize: "14px", color: "#5F5E5A", lineHeight: 1.7, marginBottom: "0.5rem" }}>
                   <strong style={{ color: "#2C2C2A", fontWeight: 500 }}>{item.label}</strong> {item.text}
@@ -168,7 +168,7 @@ export default function AvoidingFalls() {
             </h2>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              Airplane crashes are almost never caused by one thing. They&apos;re a cascade — a small problem missed, then a second small problem on top of it, then a decision made in the wrong order, then weather, then fatigue, then the thing that finally pushes it past recovery.
+              Airplane crashes are almost never caused by one thing. They&apos;re a cascade. A small problem missed, then a second small problem on top of it, then a decision made in the wrong order, then weather, then fatigue, then the thing that finally pushes it past recovery.
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
