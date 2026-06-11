@@ -60,6 +60,7 @@ export default function FightBack() {
               { title: "The Pulmonary Rehab Takeover", desc: "The generic program was designed for the average patient. Lonna was not the average patient. And I was not a perfectly average caregiver.", href: "/fight-back/pulmonary-rehab-takeover" },
               { title: "Brian, I'm Starting to Forget Things", desc: "A letter to my son — and a system to help when it's your turn. Build it before the fog rolls in.", href: "/fight-back/brian-letter" },
               { title: "The 45-Minute Argument", desc: "How to fight for your person. The doctor who wanted to put her on a subcutaneous pump. Why I pushed back and why it mattered.", href: "/fight-back/the-45-minute-argument" },
+              { title: "Avoiding Falls", desc: "Falls are almost never one dramatic event. They're a cascade — and most of it can be rewritten before gravity gets involved.", href: "/fight-back/avoiding-falls" },
               { title: "Multi-Provider Care Coordination", desc: "The v0.1 document built during a crisis. How to keep multiple specialist teams aligned when the system is designed to keep them apart.", href: null },
               { title: "Rejected by Three Transplant Centers", desc: "What to do when the answer is no. How to keep pushing when every institution says stop.", href: null },
               { title: "Decoding the Discharge Process", desc: "The little d, the big D, the big red C. What hospital discharge actually looks like from the inside.", href: null },
