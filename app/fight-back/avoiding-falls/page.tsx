@@ -37,7 +37,7 @@ export default function AvoidingFalls() {
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
-              The first one was in the hospital, with a nurse standing right next to her. I&apos;m still not sure how that happens physically. The human body needs at least two failures to hit the floor when someone is already touching you. But it happened. The bruising was unbelievable. She was sore for weeks.
+              The first one was in the hospital, with a nurse standing right next to her. I still don&apos;t know how you fall with someone touching you. The bruising was unbelievable. She was sore for weeks.
             </p>
 
             <p style={{ marginBottom: "1.5rem" }}>
