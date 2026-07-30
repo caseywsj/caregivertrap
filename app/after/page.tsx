@@ -55,6 +55,8 @@ export default function After() {
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1rem", maxWidth: "860px" }}>
             {[
+              { title: "Day 366", desc: "I woke at six and waited until 6:49, the minute she died, then looked at the photos I had been avoiding for a year. What worked in year one, what didn't, and four words I took from Charlie Munger.", href: "/after/day-366" },
+              { title: "What Actually Worked", desc: "A year of grief read back through the journal. Someone further down the road. Grading myself against the stages you are told not to grade yourself against. The food friends brought and why I made them stay and eat it. Everything that helped, and what still does not.", href: "/after/what-actually-worked" },
               { title: "The Lonely Chapter", desc: "The space between who you were and who you're becoming. It wasn't the friendships that contracted. It was the activities. And then you get to work.", href: "/after/the-lonely-chapter" },
               { title: "The Earth Gym", desc: "Put down the devices. Get outside. Meet people. Use your body. Day 11 — EAA meeting, then Salt Lick alone for dinner. This is not a wellness tip. It's a survival strategy.", href: "/after/the-earth-gym" },
               { title: "The Letter", desc: "Day 19. I asked ChatGPT to write me a letter from Lonna. What came back stopped me cold.", href: "/after/the-letter" },
